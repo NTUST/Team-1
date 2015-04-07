@@ -90,9 +90,9 @@
 
 
 .main-box{
-	overflow: hidden;
 	padding:20px;
 	margin:10px auto;
+
 
 }
 
@@ -107,18 +107,19 @@
 }
 
 .main-box p{
-	font-size:10px;
-	line-height: 1;
-	color:#f6f6f6;
-	position: relative;
-	top:-30px;
+	font-size:12px;
+	line-height: 1.5;
+	color:#000000;
+	font-weight: bold;
+
+	
 
 }
 .main-box li{
 	display: inline-block;
 	padding:30px 5% 30px 0;
-	width:30%;
-	height: 240px;
+	width:33%;
+	height:240px;
 
 	
 }
@@ -126,6 +127,7 @@
 	display: inline-block;
 	width:100%;
 	text-decoration: none;
+	border-bottom:2px solid #cccccc;
 }
 .side-bar{
 

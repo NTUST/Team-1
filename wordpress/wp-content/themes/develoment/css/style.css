@@ -1,0 +1,314 @@
+
+/*=====header setting======*/
+body{
+	background: #e1e1e1;
+}
+
+#header{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 10000;
+	width:100%;
+	padding: 20px;
+	background-color: #d1d1d1;
+	min-width: 940px;
+	text-align:center;
+	border-top: 5px solid #000;
+	/* display: none; */
+}
+
+
+.logo-box{  /*logo setting*/
+	margin:0 auto;
+	padding:10px 0;
+	display: block;
+	border-radius: 5px;
+	
+}
+.logo-box h3{
+	font-size:40px;
+	font-family: 'Droid Sans', sans-serif;
+	padding-bottom:30px; 
+	border-bottom:3px solid #4c4c4c;    
+}
+
+.nav-box{  /* nav setting */
+	min-width:940px;
+	max-width:1100px;
+	margin:0 auto;
+	height:auto;
+	overflow:hidden;
+	vertical-align: top;
+	border-bottom:2px solid #c6c6c6;
+	
+}
+
+.nav-bar{
+	float: left;
+	width:15%;
+	padding:5px;
+	margin:0;
+	border-right:1px solid #666;
+
+
+	
+}
+
+.nav-bar:last-child{
+	border-right:0;
+}
+
+
+
+#header ul>li a::before{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#header ul li a{
+	position: relative;
+	width:100%;
+	display: block;
+	color:#4c4c4c;
+}
+
+#header li{
+	list-style: none;
+	color:transparent;
+		float: left;
+	width:15%;
+	padding:5px;
+	margin:0;
+	border-right:1px solid #666;
+}
+
+
+
+/*===========================================*/
+
+
+
+
+/*====wrapper=====*/
+#wrapper{
+	height:100%;
+	position: relative;
+	top:227px;
+
+}
+
+
+/* article-box */
+
+.main-box{
+	padding:0;
+	margin:0;
+	text-align: center;
+	
+
+}
+
+.article-box{
+	margin:10px auto;
+	text-align: center;
+}
+
+.main-box p{
+	font-size:12px;
+	line-height: 1.5;
+	color:#000000;
+	font-weight: bold;
+	text-align: left;
+
+	
+
+}
+.main-box li{
+	display: inline-block;
+	margin:10px;
+	width:30%;
+	height:240px;
+	border-bottom:1px solid #666;
+
+	
+}
+.main-box li a{
+	display: inline-block;
+	padding:8px;
+	width:100%;
+	background: #d1d1d1;
+	text-decoration: none;
+	border-radius: 5px;
+	border-bottom:2px solid #cccccc;
+}
+
+/* aricle-content */
+.box-heading{
+	text-align: center;
+	width: 100%;
+	padding:20px 50px;
+	border-bottom:2px solid #c6c6c6;
+}
+
+.box-heading h2{
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-size:30px;
+	color:#000;
+
+}
+
+.box-content{
+	width: 100%;
+	padding:50px;
+}
+
+.box-content p{
+	font-size:15px;
+	line-height:1.789;
+	color:#444444; !important
+}
+
+.box-content h3{
+	font-size:20px;
+	line-height: 1.789;
+	color:#222222;
+}
+
+.box-content span{
+	font-size:18px; !important
+}
+
+/*
+
+
+/* side-bar */
+.col_3 p{
+	display: block;
+	font-size:14px;
+	padding: 0 10px;
+	
+}
+
+.side-container li{
+	border-bottom:1px solid #000;
+	list-style: disc;
+}
+
+.side-container a{
+	display: inline-block;
+	width:100%;
+	color:#666;
+}
+
+.side-container {
+	list-style: none;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+
+
+}
+
+
+/*----------------*/
+
+/*====pagebar=====*/
+.page-bar{
+	display: block;
+	width:100%;
+	/*margin:10px auto;*/ /*why this doesn't work?*/
+	text-align: center; /*why this works?*/
+	content:" ";
+	clear:both;
+}
+
+.page-bar ul{
+	
+	margin:5px auto;
+}
+
+.page-bar ul li:first-child{
+	float:left;
+	margin:5px auto;
+	border:0;
+}
+
+.page-bar ul li:last-child{
+	float:right;
+	margin:5px auto;
+	border:0;
+}
+
+.page-bar a{
+	display: block;
+	width: 100%;
+	padding:0;
+	text-decoration: none;
+	color:#666;
+}
+
+.page-bar li{
+	border-right: 1px solid #000;
+	list-style: none;
+	padding:0 5px;
+	display: inline-block;
+}
+
+
+
+
+
+/*====footer=====*/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  min-height:1px;
+  color: #ccc;
+  
+
+}
+
+footer p{
+	padding: 10px;
+	display: inline-block;
+	font-size:15px;
+	color:#000;
+	background: #384047;
+	border-radius: 5px;
+}
+
+/* [icon-setting] */
+
+*[class^="icon-"] {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url('evil-icons.svg');
+	overflow: hidden;
+	text-indent: 100%;
+}
+
+/* test*/
+.test{
+	display: inline-block;
+	margin:10px;
+	width:30%;
+	height:240px;
+	border-bottom:1px solid #666;
+
+}
+
+.test a{
+	display: inline-block;
+	width:100%;
+	background: #d1d1d1;
+	text-decoration: none;
+	border-radius: 5px;
+	padding:8px;
+	border-bottom:2px solid #cccccc;
+}

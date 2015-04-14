@@ -95,7 +95,7 @@ body{
 #wrapper{
 	height:100%;
 	position: relative;
-	top:227px;
+	top:175px;
 
 }
 
@@ -125,13 +125,13 @@ body{
 	
 
 }
-.main-box li{
+/*.main-box li{
 	display: inline-block;
 	margin:10px;
 	width:30%;
 	height:240px;
 	border-bottom:1px solid #666;
-
+*/
 	
 }
 .main-box li a{

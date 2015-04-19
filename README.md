@@ -1,7 +1,7 @@
 # Team-1
 
 <style>
-	P{font-size:16px};
+	p{font-size:16px};
 
 </style>
 
@@ -21,5 +21,6 @@
 * 4/9 更新網頁初版
 * 4/10 微調版型
 * 4/12 加入wordpress統一版型
+* 4/16 重新設計網頁版型
 
 

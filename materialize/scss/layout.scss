@@ -1,0 +1,162 @@
+@import "_variable";
+
+/***********************
+	  BodySetting
+ **********************/
+.fullpage{
+	padding-top: $header-height;
+}
+
+/*--- header ---*/
+.kai-header{
+	nav{
+		position: fixed;
+		z-index:9999;
+		float:none;
+		left:0;
+		top:0;
+		line-height: $header-height;
+		height:$header-height;
+		width: 100%; 
+		@include gradient($header-color,$baseline);
+	}
+}
+
+/******************
+	LeftMenu
+*******************/
+.l-menu{
+	position:fixed;
+	z-index: 500;
+	left:0;
+	top:0;
+	padding-top: $header-height;
+	width: $l-menu-width;
+	height:100%;
+	background-color: #efefef;
+
+	a{
+			display: block;
+			font-size: 1.25rem;
+			color:inherit;
+		}
+	.user-info{
+		&-img{
+			padding:10px;
+			text-align: center;
+			border-bottom: 1px solid $br-color;
+			img{
+				max-width: 50%;
+				@include border-radius(50%);
+				transition:0.3s all ease;
+				&:hover{
+					-webkit-transform:scale(1.1) ;
+					-moz-webkit-transform:scale(1.1) ;
+					-ms-webkit-transform:scale(1.1) ;
+					-o-webkit-transform:scale(1.1) ;
+					transform:scale(1.1) ;
+				}
+			}
+
+		}
+	}
+	.media-link{
+		margin:10px 0;
+		padding: 0 10px;
+		text-align: center;
+
+		li{
+			display: inline-block;
+			height:1.5em;
+			width:1.5em;
+			margin-right: 10px;
+			text-align: center;
+			font-size: 1.5em;
+			background-color: #aaa;
+			@include border-radius(50%);
+			transition:0.5s all ease;
+			&:hover{
+				background-color: $link-color;
+			}
+
+		}
+	}
+
+	&-content{
+		li{
+			transition:0.3s all ease;
+			&:hover{
+				@extend %hover;
+			}
+		}
+		
+		a{
+			display: inline-block;
+			padding:0 10px;
+			color:$menu-color;
+			line-height: 2em;
+			transition:0.5s all ease;
+		}
+
+	}
+
+}
+
+
+
+/********************
+	MainContainer
+********************/
+.main-container{
+	padding-left: $l-menu-width;
+	width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .main-container{
+    	padding-left: 0;
+    }
+}
+
+.content-container{
+	
+	.heading{
+		margin: 15px 0;
+		text-align: center;
+		border-bottom: 1px solid $br-color;
+	}
+	.title{
+		font-size: 1.5em;
+		border-bottom: 4px solid $main-color;
+	}
+
+	.sub-title{
+		@extend .title;
+		font-size:1.2em;
+	}
+}
+
+.secondary-container{
+	@extend .content-container;
+	text-align: center;
+	.sub-title{
+		border-bottom: 2px solid $main-color;
+	}
+}
+
+
+/*******************
+	Footer
+********************/
+.footer-container{
+	@extend .content-container;
+	margin:0;
+	padding:0;
+}
+
+
+
+/*--- clearfix ---*/
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix, *:first-child+html .clearfix{zoom:1}

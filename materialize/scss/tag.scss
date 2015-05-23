@@ -1,0 +1,41 @@
+@import "_variable";
+$height:1.5em;
+.tag{
+	position:relative;
+	display: inline-block;
+	margin:5px;
+	// overflow: hidden;
+	&-main{
+		display: inline-block;
+		margin-left:.7em;
+		padding:0 0.8em;
+		height:$height;
+		line-height: $height;
+		font-size:1em;
+		&:before,
+		&:after{
+			position: absolute;
+			top: 0;
+			z-index: -1;
+			display: inline-block;
+			content: "";
+			height:$height;
+			width: $height;
+			@include border-radius(50%);
+			@include ratate(45deg);
+		}
+		&:before{
+			left:0;
+		}
+		&:after{
+			right:-10%;
+		}
+	}
+}
+
+.tag-main,
+.tag-main:before,
+.tag-main:after{
+	background: $header-color;
+}
+

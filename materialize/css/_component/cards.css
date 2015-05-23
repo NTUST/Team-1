@@ -1,0 +1,110 @@
+/*--- color ---*/
+/*---typography---*/
+.k-card, .quote-card, .footer {
+  position: relative;
+  padding: 15px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  height: 250px;
+  background-color: #fff;
+  border: 1px dotted #03a9f4; }
+
+.k-card {
+  font-size: 12px;
+  overflow: hidden; }
+  .k-card-img {
+    width: 100%;
+    height: 60%;
+    text-align: center; }
+    .k-card-img img {
+      max-width: 100%;
+      height: 100%; }
+  .k-card-title {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #222; }
+  .k-card-content {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #444;
+    overflow: hidden; }
+  .k-card-author {
+    position: absolute;
+    z-index: 55;
+    bottom: 0;
+    right: 0;
+    padding-right: 15px;
+    width: 100%;
+    text-align: right;
+    font-size: 0.5em;
+    color: #aaa;
+    background-color: #fff; }
+
+.quote-card {
+  font-size: 16px;
+  height: 300px; }
+  .quote-card-img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-align: center; }
+    .quote-card-img img {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%; }
+  .quote-card-quote {
+    font-size: 1em;
+    font-color: #444;
+    font-style: italic;
+    position: relative; }
+    .quote-card-quote::before, .quote-card-quote::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      border: solid 3px #cbcbcb;
+      height: 1.75em;
+      width: 1.75em; }
+    .quote-card-quote::before {
+      top: -1em;
+      margin-left: -.75em;
+      height: 1.75em;
+      width: 1.75em;
+      border-width: 1px 0 0 1px; }
+    .quote-card-quote::after {
+      right: 0;
+      margin-right: -.75em;
+      border-width: 0 1px 1px 0; }
+  .quote-card-author {
+    position: absolute;
+    z-index: 55;
+    bottom: 0;
+    right: 0;
+    padding-right: 15px;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    color: #aaa;
+    background-color: #fff; }
+
+.footer {
+  padding: 15px;
+  width: 100%;
+  background-color: #efefef;
+  border: none; }
+
+blockquote {
+  margin: 15px 20px;
+  padding: 10px 20px;
+  line-height: 1.8em;
+  font-size: 1em;
+  font-style: normal;
+  color: #222;
+  background-color: #efefef;
+  border-left: 4px solid #6cf; }
+
+/*# sourceMappingURL=cards.css.map */

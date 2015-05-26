@@ -1,0 +1,100 @@
+@import "variable";
+@import "cards";
+
+%header-setting{
+	color:$header-color;
+	font-weight: normal;
+}
+
+@for $i from 1 through 6 {
+	h#{$i}{
+		@extend %header-setting;
+	}
+	
+}
+
+%article {
+	font-size:16px;
+	color:$font-color;
+
+}
+
+/*---ArticleContent---*/
+
+.article{
+	@extend %article ;
+	&-heading{
+		margin: 0 15px;
+		padding: 10px 35px;
+		border-bottom: 2px solid $br-color;
+	}
+
+	&-intro{
+		position: relative;
+		margin:15px 20px;
+		padding:5px 50px;
+		background-color:#fff;
+		color:$emphasis-color;
+		p{
+			line-height: 40px;
+		}
+		&::before,
+		&::after{
+			content:"";
+			display: inline-block;
+			position:absolute;
+			border:solid 3px #cbcbcb;
+			height:1.75em;
+			width:1.75em;
+
+
+
+		}
+		&::before{
+			top:1em;
+			left:0;
+			height:1.75em;
+			width:1.75em;
+			border-width: 1px 0 0 1px;
+		}
+		&::after{
+			bottom:0;
+			right:0;
+			border-width: 0 1px 1px 0;
+		}
+	}
+
+	&-content{
+		li{
+			color:$emphasis-color2;
+			list-style: square;
+			font-size:1.5em;
+		}
+		p{
+			color:$font-color;
+			font-size:1em;
+			line-height: $line-height;
+			letter-spacing: 0.3px;
+		}
+
+		strong{
+			color:$emphasis-color2;
+
+		}
+		blockquote{
+			margin:15px 20px;
+			padding:10px 20px;
+			line-height: 1.8em;
+			font-size:1em;
+			font-style:normal;
+			color:$emphasis-color;
+			background-color: #efefef;
+			border-left:4px solid #6cf; 
+		}
+
+
+
+	}
+}
+
+

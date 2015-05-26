@@ -1,0 +1,6 @@
+
+@import "_variable";
+
+.img-circled{
+	@include border-radius(50%);
+}

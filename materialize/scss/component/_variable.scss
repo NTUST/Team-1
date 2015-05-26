@@ -1,0 +1,48 @@
+
+/*--- color ---*/
+$font-color           : #444;
+$emphasis-color       : #222;
+$emphasis-color2      : #080A9F;
+$link-color           : #0288d1;
+$hover-color          : #81d4fa;
+$menu-color           : #726464;
+$br-color             : #ddd;
+$baseline             : #0277bd;
+$header-color         : #03a9f4;
+$main-color           : #03a9f4;
+
+/*---typography---*/
+$line-height          : 1.9em;
+$global-font-size     : 16px;
+$l-menu-width         : 220px;
+$header-height        : 55px;
+
+@mixin gradient($color1,$color2) {
+	background-color: $header-color;
+	// background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $color1), color-stop(100%, $color2));
+	// background: -webkit-linear-gradient($color1, $color2);
+	// background: -o-linear-gradient($color1, $color2);
+
+}
+
+@mixin border-radius($radius) {
+	border-radius: 		$radius;
+  	-moz-border-radius: $radius;
+  -webkit-border-radius:$radius;
+}
+
+@mixin ratate($deg){
+	-webkit-transform:rotate($deg);
+	-moz-webkit-transform:rotate($deg);
+	-ms-webkit-transform:rotate($deg);
+	-o-webkit-transform:rotate($deg);
+}
+
+%hover{
+	background-color:$hover-color;
+}
+
+%hover{
+	
+}
+

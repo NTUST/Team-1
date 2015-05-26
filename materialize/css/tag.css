@@ -1,0 +1,39 @@
+/*--- color ---*/
+/*---typography---*/
+.tag {
+  position: relative;
+  display: inline-block;
+  margin: 5px; }
+  .tag-main {
+    display: inline-block;
+    margin-left: .7em;
+    padding: 0 0.8em;
+    height: 1.5em;
+    line-height: 1.5em;
+    font-size: 1em; }
+    .tag-main:before, .tag-main:after {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      display: inline-block;
+      content: "";
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -webkit-transform: rotate(45deg);
+      -moz-webkit-transform: rotate(45deg);
+      -ms-webkit-transform: rotate(45deg);
+      -o-webkit-transform: rotate(45deg); }
+    .tag-main:before {
+      left: 0; }
+    .tag-main:after {
+      right: -10%; }
+
+.tag-main,
+.tag-main:before,
+.tag-main:after {
+  background: #03a9f4; }
+
+/*# sourceMappingURL=tag.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;AAGA,YAAY;ECyBX,aAAa,EDxBU,GAAG;ECyBxB,kBAAkB,EDzBG,GAAG;EC0BzB,qBAAqB,ED1BC,GAAG",
+"sources": ["../scss/img.scss","../scss/_variable.scss"],
+"names": [],
+"file": "img.css"
+}

@@ -1,6 +1,6 @@
 # Team-1
 
-目前demo : [ntust.github.io/Team-1/materialize/index.html](http://ntust.github.io/Team-1/newdesign/index.html)
+目前demo : [ntust.github.io/Team-1/materialize/index.html](ntust.github.io/Team-1/materialize/index.html)
 
 > 介紹
 

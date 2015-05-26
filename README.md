@@ -1,11 +1,6 @@
 # Team-1
 
-<style>
-	p{font-size:16px};
-
-</style>
-
-目前demo : [ntust.github.io/Team-1/newdesign/index.html](http://ntust.github.io/Team-1/newdesign/index.html)
+目前demo : [ntust.github.io/Team-1/materialize/index.html](http://ntust.github.io/Team-1/newdesign/index.html)
 
 > 介紹
 

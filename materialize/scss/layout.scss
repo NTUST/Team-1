@@ -1,7 +1,11 @@
 @import "component/variable";
+@import "component/color.scss";
+/* @import "component/mixin"; */
 @import "component/cards";
 @import "component/image";
 @import "component/prefixer";
+@import "component/animation";
+@import "component/event-box";
 
 
 /***********************
@@ -11,6 +15,14 @@
 	padding-top: $header-height;
 }
 
+#gotop{
+	position:fixed;
+	display: none;
+	bottom:5%;
+	right:5%;
+	z-index:999;
+	background-color: $main-color;
+}
 /*--- header ---*/
 .kai-header{
 	nav{
@@ -22,9 +34,10 @@
 		line-height: $header-height;
 		height:$header-height;
 		width: 100%; 
-		@include gradient($header-color,$baseline);
+		@include gradient($header-color,$header-color,50%);
 	}
 }
+
 .logo-box{
 	i{
 		display: inline!important;
@@ -51,7 +64,7 @@
 
 	a{
 			display: block;
-			font-size: 1.25rem;
+			font-size: 1.1rem;
 			color:inherit;
 		}
 	.user-info{
@@ -83,6 +96,7 @@
 			display: inline-block;
 			height:1.5em;
 			width:1.5em;
+			padding:3px;
 			margin-right: 10px;
 			text-align: center;
 			font-size: 1.5em;
@@ -111,7 +125,7 @@
 			display: inline-block;
 			padding:0 10px;
 			color:$menu-color;
-			line-height: 2em;
+			line-height: 2.5em;
 			transition:0.5s all ease;
 		}
 
@@ -159,8 +173,52 @@
 }
 
 .sub-title{
+		font-size:1.2em;
 		border-bottom: 2px solid $main-color;
 	}
+
+/****************
+	Slider
+*****************/
+
+.slider {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	.list{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		width: 9999px;
+		height: 100%;
+		li{
+			float: left;
+			height: 100%;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			border: 0;
+
+		}
+		
+		
+	}
+	
+}
+
+.caption{
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index: 9999999;
+}
+/*---OpenMenu---*/
+.openmenu{
+	
+}
 
 
 /*---CityWorkIntroduction---*/
@@ -170,7 +228,7 @@
 	margin-right:1em;
   }
   &-content{
-	@extend .content-container
+	@extend .content-container;
   }
 }
 

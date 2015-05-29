@@ -1,0 +1,11 @@
+@mixin border-bottom($size, $color, $style) {
+	border-bottom:$size, $color, $style;	
+}
+
+@mixin border-right($size, $color, $style){
+	border-right:$size, $color, $style;	
+}
+
+@mixin border-left($size, $color, $style) {
+	border-left:$size, $color, $style;	
+}

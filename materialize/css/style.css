@@ -1,7 +1,7 @@
-@import url(article.css);
-@import url(reset.css);
-@import url(article-card.css);
+@import url(component/article.css);
+@import url(component/reset.css);
+@import url(component/article-card.css);
 @import url(layout.css);
-@import url(tag.css);
-@import url(_component/cards.css);
-@import url(img.css);
+@import url(component/tag.css);
+@import url(component/cards.css);
+@import url(component/img.css);

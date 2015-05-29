@@ -1,0 +1,77 @@
+.skin{
+	color:#353535;
+	background-color: #fff;
+	border:2px solid #6cf;
+	@include border-radius(5px);
+}
+.event-box{
+	position:relative;
+	margin:50px 40px;
+	/*width:100%;*/
+	height:auto;
+	padding:15px 25px;
+	p{
+		line-height: 1.8;
+		letter-spacing: 0.4px;
+	}
+
+}
+.event-box p {
+	
+}
+
+.event-box::before, 
+.event-box::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top:45%;
+	left:-20px;
+	margin-top: -3px;
+	height:0;
+	width:0;
+	border-top:10px solid transparent;
+	border-bottom:10px solid transparent ;
+	border-right: 20px solid #6cf;
+	
+
+}
+
+.event-box::after{
+	border-right: solid 20px #fff;
+	left:-17px;
+}
+
+.style-none {
+	text-decoration: none;
+	list-style: none;
+}
+
+.guide{
+	display: block;
+	position:absolute;
+	z-index: 50;
+	top:45%;
+	left:-110px;
+	width:78px;
+	margin-top: -30px;
+	line-height: 78px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+	color: #999;
+	border-radius: 50%;
+	border:2px solid #6cf;
+	
+}
+
+/*---styled---*/  /*紀錄常用樣式*/
+
+.heading-deco{
+	padding:5px 8px;
+	@include border-radius(6px);
+}
+
+.color-blue{
+	background-color:$header-color;
+}

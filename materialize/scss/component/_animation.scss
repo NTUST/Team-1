@@ -1,0 +1,7 @@
+
+.animation-slide{
+  @include transition-duration(0.2s);
+  @include transition-property(left);
+  @include transition-timing-function(ease-out);
+
+}

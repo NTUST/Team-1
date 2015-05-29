@@ -16,7 +16,7 @@
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  height: 250px;
+  height: 325px;
   background-color: #fff; }
 
 .k-card {
@@ -67,7 +67,7 @@
       -webkit-border-radius: 50%; }
   .quote-card-quote {
     font-size: 1em;
-    font-color: #444;
+    color: #444;
     font-style: italic;
     position: relative; }
     .quote-card-quote::before, .quote-card-quote::after {
@@ -115,14 +115,27 @@ blockquote {
 
 /*---ArticleCard---*/
 .article-card {
+  height: 300px;
   font-size: 12px;
   overflow: hidden;
   transition: 0.3s all ease; }
+  .article-card h5 {
+    font-size: 1.5em; }
+  .article-card h5 {
+    font-size: 1.5em; }
+  .article-card h5 {
+    font-size: 1.5em; }
+  .article-card h5 {
+    font-size: 1.5em; }
+  .article-card h5 {
+    font-size: 1.5em; }
+  .article-card h5 {
+    font-size: 1.5em; }
   .article-card:hover {
     box-shadow: 1px 0 0 0.5px #81d4fa, 0 1px 0 0.5px #81d4fa, 0 0 1px 0.5px #81d4fa, 0 0 0 0.5px #81d4fa; }
   .article-card-img {
     width: 100%;
-    height: 60%;
+    height: 50%;
     text-align: center; }
     .article-card-img img {
       width: 100%;

@@ -58,3 +58,4 @@ $(function(){
         $playerControlLi.eq((_index + 1) % $playerControlLi.length).click();
     }
 });
+

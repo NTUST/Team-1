@@ -65,10 +65,28 @@
 /*---styled---*/  /*紀錄常用樣式*/
 
 .heading-deco{
-	padding:5px 8px;
-	@include border-radius(6px);
+	padding:5px 10px;
+	@include border-radius(15px);
 }
 
 .color-blue{
 	background-color:$header-color;
+}
+
+.bottom-deco{
+	transition:border-bottom 0.3s ease;
+	@extend .fadeInLeft;
+	&:hover{
+		border-bottom: 5px solid $hover-color;
+
+	}
+	
+}
+
+%hover-scale{
+	-webkit-transform:scale(1.1) ;
+	-moz-transform:scale(1.1) ;
+	-ms-transform:scale(1.1) ;
+	-o-transform:scale(1.1) ;
+	transform:scale(1.1) ;
 }

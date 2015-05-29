@@ -1,5 +1,5 @@
 @import "component/variable";
-@import "component/color.scss";
+// @import "component/color.scss";
 /* @import "component/mixin"; */
 @import "component/cards";
 @import "component/image";
@@ -183,7 +183,7 @@
 
 .slider {
 	width: 100%;
-	height: 350px;
+	height: 300px;
 	position: relative;
 	overflow: hidden;
 	.list{

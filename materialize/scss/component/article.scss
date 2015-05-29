@@ -89,11 +89,11 @@
 			font-style:normal;
 			color:$emphasis-color;
 			background-color: #efefef;
-			border-left:4px solid #6cf; 
+			border-left:4px solid #6cf;
+			@media screen and (max-width: 687px) {
+				margin:0;
+			}
 		}
-
-
-
 	}
 }
 

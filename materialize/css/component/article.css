@@ -273,5 +273,8 @@ blockquote {
   color: #222;
   background-color: #efefef;
   border-left: 4px solid #6cf; }
+  @media screen and (max-width: 687px) {
+    .article-content blockquote {
+      margin: 0; } }
 
 /*# sourceMappingURL=article.css.map */

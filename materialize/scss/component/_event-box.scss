@@ -5,20 +5,20 @@
 	@include border-radius(5px);
 }
 .event-box{
+	display: inline-block;
 	position:relative;
 	margin:50px 40px;
-	/*width:100%;*/
+	width:100%;
 	height:auto;
 	padding:15px 25px;
 	p{
 		line-height: 1.8;
 		letter-spacing: 0.4px;
 	}
+	border:2px solid #6cf;
 
 }
-.event-box p {
-	
-}
+
 
 .event-box::before, 
 .event-box::after{
@@ -48,20 +48,17 @@
 }
 
 .guide{
-	display: block;
-	position:absolute;
-	z-index: 50;
-	top:45%;
-	left:-110px;
-	width:78px;
+	display: inline-block;
+	width:3em;
+	height:3em;
 	margin-top: -30px;
-	line-height: 78px;
+	line-height: 3em;
 	text-align: center;
-	font-weight: 400;
-	font-size: 24px;
-	color: #999;
+	font-weight: 40;
+	font-size: 1.2em;
+	color: $font-color;
 	border-radius: 50%;
-	border:2px solid #6cf;
+	border:2px solid $main-color;
 	
 }
 

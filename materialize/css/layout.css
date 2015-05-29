@@ -454,6 +454,9 @@ blockquote {
   height: 300px;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 600px) {
+    .slider {
+      height: 200px; } }
   .slider .list {
     padding: 0;
     margin: 0;

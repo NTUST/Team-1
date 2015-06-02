@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/fadein.js"></script>
+    <script>
+        $(function(){
+            $("#gotop").click(function(){
+                jQuery("html,body").animate({scrollTop:0}, 1000);
+            });
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 300){
+                    $("#gotop").fadeIn("fast");
+                }
+                else{
+                    $("#gotop").stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="fullpage clearfix">
+        <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
+        <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+              <i class="large mdi-editor-mode-edit"></i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+              <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+              <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+            </ul>
+        </div>
+        <header class="kai-header">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo"><i class="mdi-social-domain"></i></a>
+                    <ul class="right">
+                        <li><button id="open-menu" class="btn btn-large show-on-small">open</button></li>
+                        <li><a href="author.html">關於城市人</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><input type="checkbox" class="openmenu"></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
+            <div id="1" class="user-info">
+                <div class="user-info-img">
+                    <a href=""><img src="profile.jpg" alt=""></a>
+                </div>
+                <ul class="media-link">
+                    <li><a href="#" ><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" title="收藏文章"><i class="fa fa-heart fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <ul class="l-menu-content">
+                <li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
+                <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
+                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
+                <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
+                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+        </div>
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12 center">
+                        <div class="heading"><span class="title"><i class="fa fa-building"></i> 城市人檔案</span></div>
+                        <div class="profile-container col s10 m10 l10 offset-l1">
+                            <table class="striped">
+                                <thead>
+                                  
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>姓名</td>
+                                    <td>陳愷奕</td>
+                                  </tr>
+                                  <tr>
+                                      <td>生日</td>
+                                      <td>1994/11/11</td>
+                                  </tr>
+                                  <tr>
+                                    <td>學校科系</td>
+                                    <td>台灣科技大學-資訊管理系</td>
+                                  </tr>
+                                  <tr>
+                                    <td>興趣與專長</td>
+                                    <td>
+                                        <li>專長：我很帥哦，這是我的專長，就是帥帥帥帥帥死你</li>
+                                        <li>興趣：平常喜歡彈鋼琴和朋友打屁聊天</li>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>職業</td>
+                                      <td>
+                                          <p>我目前還是一位在台北努力生存的大學生哦！對社會上、職場上的問題都還不熟悉。</p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>最近的困擾</td>
+                                      <td>
+                                        <p>一直以來我的困擾就是太帥了，女生看到我都會主動貼上來，害我都不知道怎麼辦了才好。如果你有好方法的話，還請你教教我</p>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>夢想、未來目標</td>
+                                      <td>
+                                          <p>
+                                              未來希望能夠到世界各地旅行，成為舉世聞名的帥哥。
+                                          </p>
+                                      </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l12 center">
+                        <button data-target="modal-profile" class="modal-trigger btn bg-color">編輯個人介紹</button>
+                        <button data-target="modal-dairy" class="modal-trigger btn bg-color">撰寫日誌</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-profile" class="modal modal-fixed-footer animated fadeInUpBig">
+                <h4>編輯個人介紹</h4>
+                <textarea name="dairy" id="dairy"></textarea>
+            </div>
+            <div id="modal-dairy" class="modal modal-fixed-footer animated fadeInUpBig">
+                <h4>撰寫日誌</h4>
+                <textarea name="dairy" id="dairy"></textarea>
+            </div>
+        </div>
+            
+    </div>
+</body>
+
+</html>

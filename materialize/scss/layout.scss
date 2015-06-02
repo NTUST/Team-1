@@ -145,7 +145,20 @@
     	padding-left: 0;
     }
 }
+.heading{
+		margin: 15px 0;
+		text-align: center;
+		border-bottom: 1px solid $br-color;
+	}
+	.title{
+		font-size: 1.5em;
+		border-bottom: 4px solid $main-color;
+	}
 
+	.sub-title{
+		@extend .title;
+		font-size:1.2em;
+	}
 .content-container{
 	color:$font-color;
 	.heading{
@@ -175,9 +188,20 @@
 	}
 
 /****************
-	INTRODUCTION
+	Table
 *****************/
-
+.profile-container{
+	td{
+		&:first-child{
+			width:20%;
+			font-weight: bold;
+			border-right:1px solid $br-color;
+		}
+		padding:15px 10px;
+		
+	}
+	
+}
 
 
 
@@ -230,6 +254,13 @@
 	
 }
 
+/*---ModalSetting---*/
+#modal-profile{
+	padding:20px 15px;
+}
+#modal-dairy{
+	@extend #modal-profile;
+}
 
 /*---CityWorkIntroduction---*/
 .intro{

@@ -1,17 +1,7 @@
 /*--- color ---*/
 /*---typography---*/
-.bg-color {
-  background-color: #0288d1; }
-  .bg-color:hover {
-    background-color: #015380; }
-
 /*--- color ---*/
 /*---typography---*/
-.bg-color {
-  background-color: #0288d1; }
-  .bg-color:hover {
-    background-color: #015380; }
-
 .article-card h1, .article-card h2, .article-card h3, .article-card h4, .article-card h5, .article-card h6, h1, h2, h3, h4, h5, h6 {
   color: #03a9f4;
   font-weight: bold; }
@@ -150,7 +140,7 @@ blockquote {
   .article-card h5 {
     font-size: 1.5em; }
   .article-card:hover {
-    box-shadow: 1px 0 0 0.5px #015380, 0 1px 0 0.5px #015380, 0 0 1px 0.5px #015380, 0 0 0 0.5px #015380; }
+    box-shadow: 1px 0 0 0.5px #81d4fa, 0 1px 0 0.5px #81d4fa, 0 0 1px 0.5px #81d4fa, 0 0 0 0.5px #81d4fa; }
   .article-card-img {
     width: 100%;
     height: 50%;

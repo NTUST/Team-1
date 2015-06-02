@@ -4,7 +4,7 @@ $font-color           : #444;
 $emphasis-color       : #222;
 $emphasis-color2      : #080A9F;
 $link-color           : #0288d1;
-$hover-color          : #81d4fa;
+$hover-color          : #015380;
 $menu-color           : #726464;
 $br-color             : #ddd;
 $baseline             : #0277bd;
@@ -42,7 +42,10 @@ $header-height        : 55px;
 	background-color:$hover-color;
 }
 
-%hover{
-	
+.bg-color{
+	background-color: $link-color;
+	&:hover{
+		background-color: $hover-color;
+	}
 }
 

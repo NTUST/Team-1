@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/fadein.js"></script>
+    <script>
+    $(function() {
+        $("#gotop").click(function() {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $("#gotop").fadeIn("fast");
+            } else {
+                $("#gotop").stop().fadeOut("fast");
+            }
+        });
+    });
+    </script>
+    <script>
+        $(function(){
+            "use strict";
+
+          var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+          for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+          };
+
+          function toggleHandler(toggle) {
+            toggle.addEventListener( "click", function(e) {
+              e.preventDefault();
+              (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+            });
+          }
+        })
+    </script>
+</head>
+
+<body>
+    <div class="fullpage clearfix">
+        <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
+        <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="large mdi-editor-mode-edit"></i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
+                <li><a class=
+                "btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+                <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+                <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+            </ul>
+        </div>
+        <header class="kai-header">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo"><i class="mdi-social-domain"></i></a>
+                    <ul class="right">
+                        <li><a href="author.html">關於城市人</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li>
+                            <a href="#" id="open-menu" class="btn cmn-toggle-switch cmn-toggle-switch__htla active">
+                                <span>toggle menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="openmenu">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
+            <div id="1" class="user-info">
+                <div class="user-info-img">
+                    <a href=""><img src="profile.jpg" alt=""></a>
+                </div>
+                <ul class="media-link">
+                    <li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" title="收藏文章"><i class="fa fa-heart fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <ul class="l-menu-content">
+                <li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
+                <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
+                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
+                <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
+                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="heading"><span class="title">城市人的定義</span></div>
+                        <div class="col s12 m6 l4">
+                            <div class="city-card card">
+                                <span class="instruction-num"><span>1</span></span>
+                                <div class="k-card-title center"><h5>優雅的轉身，發現新亮點</h5></div>
+                                <hr>
+                                <div class="k-card-content">
+                                    <p>在繁忙的城市裡穿梭，步調緊湊的時光中，尋找棲身之處。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="city-card card">
+                                <span class="instruction-num"><span>2</span></span>
+                                <div class="k-card-title center"><h5>尋覓城市一隅的寧靜</h5></div>
+                                <hr>
+                                <div class="k-card-content">
+                                    <p>城市裡頭城市裡頭有太多喧囂，卻仍然在心中保有自己的純真。</p>
+                                </div>
+                            </div>   
+                        </div>
+                    <div class="col s12 m6 l4">
+                        <div class="city-card card">
+                            <div class="instruction-num"><span>3</span></div>
+                            <div class="k-card-title center"><h5>用行動表示想法</h5></div>
+                            <hr>
+                            <div class="k-card-content">
+                                <p>關注社會、世界議題，不會隨波逐流，對事物有自己的看法。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="city-card card">
+                            <div class="instruction-num"><span>4</span></div>
+                            <div class="k-card-title center"><h5>在夾縫中品味生活</h5></div>
+                                <hr>
+                                <div class="k-card-content">
+                                    <p>工作中也不忘品嘗生活，知道城市一隅的小食堂；一間沉伏在角落卻高品質的咖啡廳。對生活有一套見解。</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="city-card card">
+                            <div class="instruction-num"><span>5</span></div>
+                            <div class="k-card-title center"><h5>文化上癮</h5></div>
+                                <hr>
+                                <div class="k-card-content">
+                                    <p>我們擁有屬於自己的僻好、專長、興趣，而且在不知不覺中達到專業。</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="city-card card">
+                            <div class="instruction-num"><span>6</span></div>
+                            <div class="k-card-title center"><h5>用故事滋潤心靈</h5></div>
+                                <hr>
+                                <div class="k-card-content">
+                                    <p>生活不一定總是美好而繽紛，在日復一日的固定程序裡頭，我們在故事裡翱遊，讓疲憊的感官獲得解放</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="city-card card">
+                            <div class="instruction-num"><span>7</span></div>
+                            <div class="k-card-title center"><h5>追求</h5></div>
+                                <hr>
+                                <div class="k-card-content">
+                                    <p>這是個充滿不確定的時代，我們需要用人性的美好去修補文明的破洞。</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heading"><span class="title">下一個城市人，由你決定</span></div>
+                    <form class="col s12">
+                      <div class="row">
+                          <div class="input-field col s6">
+                            <i class="mdi-av-my-library-books prefix"></i>
+                            <input id="icon_prefix1" type="text" length="10">
+                            <label for="icon_prefix1">城市人</label>
+
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12 m12 l12">
+                          <i class="mdi-editor-mode-edit prefix"></i>
+                          <textarea id="icon_prefix2" class="materialize-textarea" length="50"></textarea>
+                          <label for="icon_prefix2">我覺得城市人是...</label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="col s3 m3 l3 offset-l5 offset-m5 offset-s5">
+                        <button class="btn waves-effect waves-light center" type="submit" name="action">送出
+                            <i class="mdi-content-send right"></i>
+                        </button>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="heading"><span class="title">其他人怎麼說</span></div>
+                    <div class="col s12 m12 l12">
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">帥氣</span>
+                              <p>在我的眼中，城市人應該只有一個定義，就是帥到無可救藥，但這樣應該只有我符合城市人了吧...</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">潮到出水</span>
+                              <p>如果說什麼是城市人，我的第一個想法啦！就是一個字：「潮」，講那麼多屁話？我的觀察啦！</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">潮到出水</span>
+                              <p>如果說什麼是城市人，我的第一個想法啦！就是一個字：「潮」，講那麼多屁話？我的觀察啦！</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">潮到出水</span>
+                              <p>如果說什麼是城市人，我的第一個想法啦！就是一個字：「潮」，講那麼多屁話？我的觀察啦！</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">潮到出水</span>
+                              <p>如果說什麼是城市人，我的第一個想法啦！就是一個字：「潮」，講那麼多屁話？我的觀察啦！</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">潮到出水</span>
+                              <p>如果說什麼是城市人，我的第一個想法啦！就是一個字：「潮」，講那麼多屁話？我的觀察啦！</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            <li class="collection-item avatar">
+                              <img src="profile.jpg" alt="" class="circle">
+                              <span class="title bold">潮到出水</span>
+                              <p>如果說什麼是城市人，我的第一個想法啦！就是一個字：「潮」，講那麼多屁話？我的觀察啦！</p>
+                              <span href="#!" class="secondary-content">一天以前</span>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

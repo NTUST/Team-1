@@ -1,23 +1,37 @@
-我是組裡面的OP工程師。我沒有禿頭，肝目前也是新鮮的。 雖然我是工程師，但我有一位漂亮的女朋友；貼心的女朋友；打理家事的女朋友；善解人意的女朋友，簡單來說我就是人生勝利組啦哈哈哈！！<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Design</title>
-    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/slider.js"></script>
-    
+    <script>
+    $(function() {
+        $("#gotop").click(function() {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $("#gotop").fadeIn("fast");
+            } else {
+                $("#gotop").stop().fadeOut("fast");
+            }
+        });
+    });
+    </script>
 </head>
 
 <body>
 <div class="fullpage">
+     <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
     <header class="kai-header clearfix">
         <nav>
             <div class="nav clearfix">
@@ -30,9 +44,34 @@
             </div>
         </nav>
     </header>
-    
-    <div class="container paddingfix">
+    <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
+            <div id="1" class="user-info">
+                <div class="user-info-img">
+                    <a href=""><img src="profile.jpg" alt=""></a>
+                </div>
+                <ul class="media-link">
+                    <li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" title="收藏文章"><i class="fa fa-heart fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <ul class="l-menu-content">
+                <li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
+                <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
+                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
+                <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
+                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+        </div>
+
+    <div class="main-container">
+        <div class="container">
         <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="heading"><span class="title">城市人原起</span></div>
+            </div>
             <section class="col s12 m12 l4">
                 <div class="content-container intro card-panel animated fadeInLeft">
                     <span class="heading-deco color-blue">城市人源起</span>
@@ -134,9 +173,10 @@
 
                 </ul>
             </section>
-            
-            
+             
         </div>    
+    </div>
+    
     </div>
 
 </div>

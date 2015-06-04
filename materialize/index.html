@@ -7,43 +7,71 @@
     <title>Material Design</title>
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/fadein.js"></script>
     <script>
-        $(function(){
-            $("#gotop").click(function(){
-                jQuery("html,body").animate({scrollTop:0}, 1000);
-            });
-            $(window).scroll(function(){
-                if($(this).scrollTop() > 300){
-                    $("#gotop").fadeIn("fast");
-                }
-                else{
-                    $("#gotop").stop().fadeOut("fast");
-                }
-            });
+        $(document).ready(function() {
+            $('select').material_select();
+            $('.modal-trigger').leanModal();
+            $('.datepicker').pickadate({
+                selectMonths: true, // Creates a dropdown to control month
+                selectYears: 100 // Creates a dropdown of 15 years to control year
+              });
         });
+    </script>
+    <script>
+    $(function() {
+        $("#gotop").click(function() {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $("#gotop").fadeIn("fast");
+            } else {
+                $("#gotop").stop().fadeOut("fast");
+            }
+        });
+    });
+    </script>
+    <script>
+        $(function(){
+            "use strict";
 
-            
+          var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+          for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+          };
+
+          function toggleHandler(toggle) {
+            toggle.addEventListener( "click", function(e) {
+              e.preventDefault();
+              (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+            });
+          }
+        })
     </script>
 </head>
 
 <body>
-
     <div class="fullpage clearfix">
         <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
         <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 45px; right: 24px;">
             <a class="btn-floating btn-large red">
-              <i class="large mdi-editor-mode-edit"></i>
+                <i class="large mdi-editor-mode-edit"></i>
             </a>
             <ul>
-              <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
-              <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
-              <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
-              <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+                <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
+                <li><a class=
+                "btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+                <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+                <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
             </ul>
         </div>
         <header class="kai-header">
@@ -51,14 +79,19 @@
                 <div class="nav-wrapper">
                     <a href="index.html" class="brand-logo"><i class="mdi-social-domain"></i></a>
                     <ul class="right">
-                        <li><button id="open-menu" class="btn btn-large show-on-small">open</button></li>
                         <li><a href="author.html">關於城市人</a></li>
                         <li><a href="#">Components</a></li>
                         <li><a href="#">JavaScript</a></li>
-                        <li><input type="checkbox" class="openmenu"></li>
+                        <li>
+                            <a href="#" id="open-menu" class="btn cmn-toggle-switch cmn-toggle-switch__htla active">
+                                <span>toggle menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="openmenu">
+                        </li>
                     </ul>
                 </div>
-
             </nav>
         </header>
         <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
@@ -67,7 +100,7 @@
                     <a href=""><img src="profile.jpg" alt=""></a>
                 </div>
                 <ul class="media-link">
-                    <li><a href="#" ><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
                     <li><a href="#" title="收藏文章"><i class="fa fa-heart fa-lg"></i></a></li>
                 </ul>
@@ -79,9 +112,10 @@
                 <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
                 <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
                 <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
-                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+                <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
             </ul>
         </div>
+        
         <div class="main-container">
             <div class="container">
                 <div class="row">
@@ -95,13 +129,19 @@
                                     <li>
                                         <a target="_blank" href="#"><img src="IMAG0137.jpg">
                                         </a>
-
-
                                     </li>
-                                    <li><a target="_blank" href="#"><img src="IMAG0137.jpg"></a></li>
-                                    <li><a target="_blank" href="#"><img src="IMAG0137.jpg"></a></li>
-                                    <li><a target="_blank" href="#"><img src="IMAG0137.jpg"></a></li>
-                                    <li><a target="_blank" href="#"><img src="IMAG0137.jpg"></a></li>
+                                    <li>
+                                        <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -113,96 +153,92 @@
                             <span class="title">本月精選</span>
                         </div>
                     </div>
-
-                        <div class="col s12 m6 l3 center">
-                            <span class="sub-title">生活</span>
-                            <article class="k-card z-depth-1">
-                                <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
-                                <div class="k-card-content left-align">
-                                    <p>生活並不完美，但並不代表他不美。跟著城市人一起探索本月精選生活指南吧！</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col s12 m6 l3 center">
-                            <span class="sub-title">工作</span>
-                            <article class="k-card z-depth-1">
-                                <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
-                                <div class="k-card-content left-align">
-                                    <p>你正在為工作倦怠症、上司龜毛、複雜的同事關係煩惱嗎？看來你並不孤單，許多人跟你一樣有著說不出的困擾。在職場中打滾的你，我們先為你獻上最熱烈的掌聲</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col s12 m6 l3 center">
-                            <span class="sub-title">學習</span>
-                            <article class="k-card z-depth-1">
-                                <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
-                                <div class="k-card-content left-align">
-                                    <p>學習如何學習，是城市人的必備技能之一。這次的精選文章帶你了解如何在複雜的事物中找出規律。</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col s12 m6 l3 center">
-                            <span class="sub-title">充電站</span>
-                            <article class="k-card z-depth-1">
-                                <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
-                                <div class="k-card-content left-align">
-                                    <p>有時候在夜裡埋怨：「幹嘛把自己搞得那麼累？」這是身為城市人的挑戰，卻也是進步的一大動力。偶爾停下來看些文章，讓我們在這個繁忙而快速的時代中，有個小小的喘息空間。</p>
-                                </div>
-                            </article>
-                        </div>
-                    
+                    <div class="col s12 m6 l3 center">
+                        <span class="sub-title">生活</span>
+                        <article class="k-card z-depth-1">
+                            <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
+                            <div class="k-card-content left-align">
+                                <p>生活並不完美，但並不代表他不美。跟著城市人一起探索本月精選生活指南吧！</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col s12 m6 l3 center">
+                        <span class="sub-title">工作</span>
+                        <article class="k-card z-depth-1">
+                            <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
+                            <div class="k-card-content left-align">
+                                <p>你正在為工作倦怠症、上司龜毛、複雜的同事關係煩惱嗎？看來你並不孤單，許多人跟你一樣有著說不出的困擾。在職場中打滾的你，我們先為你獻上最熱烈的掌聲</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col s12 m6 l3 center">
+                        <span class="sub-title">學習</span>
+                        <article class="k-card z-depth-1">
+                            <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
+                            <div class="k-card-content left-align">
+                                <p>學習如何學習，是城市人的必備技能之一。這次的精選文章帶你了解如何在複雜的事物中找出規律。</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col s12 m6 l3 center">
+                        <span class="sub-title">充電站</span>
+                        <article class="k-card z-depth-1">
+                            <div class="k-card-img"><img src="IMAG0124.jpg" alt=""></div>
+                            <div class="k-card-content left-align">
+                                <p>有時候在夜裡埋怨：「幹嘛把自己搞得那麼累？」這是身為城市人的挑戰，卻也是進步的一大動力。偶爾停下來看些文章，讓我們在這個繁忙而快速的時代中，有個小小的喘息空間。</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l12 secondary-container">
                         <div class="heading"><span class="title">本月金句</span></div>
                     </div>
-                        <div class="col s12 m12 l4">
-                            <div class="quote-card z-depth-1">
-                                <div class="quote-card-img">
-                                    <img src="einstein.jpg" class="circle responsive-img" alt="">
-                                </div>
-                                <div class="quote-card-quote">
-                                    想像力比知識重要，因為知識是有限的，而想像力是無限的。在這個雨中當中唯一無窮的不是宇宙。而是人類的慾望
-                                </div>
-                                <div class="quote-card-author">
-                                    <span>─愛因斯坦</span>
-                                </div>
+                    <div class="col s12 m12 l4">
+                        <div class="quote-card z-depth-1">
+                            <div class="quote-card-img">
+                                <img src="einstein.jpg" class="circle responsive-img" alt="">
+                            </div>
+                            <div class="quote-card-quote">
+                                想像力比知識重要，因為知識是有限的，而想像力是無限的。在這個雨中當中唯一無窮的不是宇宙。而是人類的慾望
+                            </div>
+                            <div class="quote-card-author">
+                                <span>─愛因斯坦</span>
                             </div>
                         </div>
-                        <div class="col s12 m12 l4">
-                            <div class="quote-card z-depth-1">
-                                <div class="quote-card-img">
-                                    <img src="einstein.jpg" alt="">
-                                </div>
-                                <div class="quote-card-quote">
-                                    想像力比知識重要，因為知識是有限的，而想像力是無限的。在這個雨中當中唯一無窮的不是宇宙。而是人類的慾望
-                                </div>
-                                <div class="quote-card-author">
-                                    <span>─愛因斯坦</span>
-                                </div>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <div class="quote-card z-depth-1">
+                            <div class="quote-card-img">
+                                <img src="einstein.jpg" alt="">
+                            </div>
+                            <div class="quote-card-quote">
+                                想像力比知識重要，因為知識是有限的，而想像力是無限的。在這個雨中當中唯一無窮的不是宇宙。而是人類的慾望
+                            </div>
+                            <div class="quote-card-author">
+                                <span>─愛因斯坦</span>
                             </div>
                         </div>
-                        <div class="col s12 m12 l4">
-                            <div class="quote-card z-depth-1">
-                                <div class="quote-card-img">
-                                    <img src="einstein.jpg" alt="">
-                                </div>
-                                <div class="quote-card-quote">
-                                    想像力比知識重要，因為知識是有限的，而想像力是無限的。在這個雨中當中唯一無窮的不是宇宙。而是人類的慾望
-                                </div>
-                                <div class="quote-card-author">
-                                    <span>─愛因斯坦</span>
-                                </div>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <div class="quote-card z-depth-1">
+                            <div class="quote-card-img">
+                                <img src="einstein.jpg" alt="">
+                            </div>
+                            <div class="quote-card-quote">
+                                想像力比知識重要，因為知識是有限的，而想像力是無限的。在這個雨中當中唯一無窮的不是宇宙。而是人類的慾望
+                            </div>
+                            <div class="quote-card-author">
+                                <span>─愛因斯坦</span>
                             </div>
                         </div>
-                    
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l12 content-container">
                         <div class="heading"><span class="title">Take Your Action Now</span></div>
                         <blockquote>還在等什麼？？？？趕快去追夢啊！！</blockquote>
                     </div>
-
                 </div>
                 <div class="row">
                     <div class="col s12 m12 l12 content-container">
@@ -210,20 +246,84 @@
                     </div>
                     <footer class="footer-container center">
                         <div class="col s12 m12 l4">
-                            <div class="footer"><span class="sub-title">加入我們</span></div>
+                            <div class="footer-card">
+                                <span class="sub-title">加入我們</span>
+                                <p class="text-left">我們正在尋找熱愛城市的你們。不管你是<strong>設計師</strong>、<strong>工程師</strong>還是<strong>部落客</strong>，城市人都渴望遇見想要改變現狀的你！但是在此之前，我們有個<strong><a href="">小功課</a></strong>來當作城市人的評分標準。</p>
+                                <p class="text-left">
+                                    我們期待你的加入，一起讓城市人變得更加茁壯。
+                                </p>
+                                
+                                <a target="modal1" class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+
+  
+                                <div id="modal1" class="modal modal-fixed-footer">
+                                    <div class="modal-content">
+                                      <h4>加入城市人</h4>
+                                      <div class="row">
+                                            <form class="col s12 m12 l12">
+                                              <div class="row">
+                                                <div class="input-field col s6 m6 l6">
+                                                  <i class="mdi-action-account-circle prefix"></i>
+                                                  <input id="icon_prefix" type="text" class="validate">
+                                                  <label for="icon_prefix">姓名</label>
+                                                </div>
+                                                <div class="input-field col s6 m6 l6">
+                                                  <i class="mdi-communication-phone prefix"></i>
+                                                  <input id="icon_telephone" type="tel" class="validate">
+                                                  <label for="icon_telephone">聯絡方式</label>
+                                                </div>
+                                              </div>
+                                            </form>
+                                            <div class="input-field col s12 m6 l6">
+                                                
+                                                <select class="browser-default">
+                                                  <label>Browser Select</label>
+                                                  <option value="" disabled selected>請選擇報名職位......</option>
+                                                  <option value="1">UI設計師</option>
+                                                  <option value="2">程式設計師</option>
+                                                  <option value="3">作者群</option>
+                                                  <option value="4">其他</option>
+                                                </select>
+                                                
+                                            </div>
+                                            <div class="col s12 m12 l6">
+                                                <form action="#">
+                                                    <div class="file-field input-field">
+                                                      <input class="file-path validate" type="text"/>
+                                                      <div class="btn">
+                                                        <span>作業</span>
+                                                        <input type="file" />
+                                                      </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col s12 m12 l6">
+                                                <label for="date">生日</label>
+                                                <input type="date" class="datepicker">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn">確認</a>
+                                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col s12 m12 l4">
-                            <div class="footer"><span class="sub-title">訂閱城市人</span></div>
+                            <div class="footer-card"><span class="sub-title">訂閱城市人</span></div>
                         </div>
                         <div class="col s12 m12 l4">
-                            <div class="footer"><span class="sub-title">媒體合作</span></div>
+                            <div class="footer-card"><span class="sub-title">媒體合作</span></div>
                         </div>
                     </footer>
                 </div>
             </div>
         </div>
-            
     </div>
+
 </body>
 
 </html>

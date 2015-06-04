@@ -1,6 +1,9 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
 /*--- color ---*/
 /*---typography---*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
 .l-menu-content li:hover {
   background-color: #015380; }
 
@@ -27,7 +30,7 @@
 .article-card {
   border: 1px solid #ddd; }
 
-.k-card, .quote-card, .footer, .article-card, .author-card {
+.k-card, .quote-card, .footer-card, .article-card, .author-card, .city-card {
   position: relative;
   padding: 15px;
   margin-bottom: 10px;
@@ -45,11 +48,12 @@
   transform: scale(1.1); }
 
 .k-card {
+  position: relative;
   font-size: 12px;
   overflow: hidden; }
   .k-card-img {
     width: 100%;
-    height: 60%;
+    height: 35%;
     text-align: center; }
     .k-card-img img {
       max-width: 100%;
@@ -60,7 +64,7 @@
     font-size: 1.25em; }
   .k-card-content {
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.8em;
     color: #444;
     overflow: hidden; }
   .k-card-author {
@@ -80,7 +84,7 @@
   height: 300px; }
   .quote-card-img {
     width: 100%;
-    height: 50%;
+    height: 40%;
     margin-bottom: 15px;
     padding-bottom: 15px;
     text-align: center;
@@ -125,9 +129,12 @@
     color: #444;
     background-color: inherit; }
 
-.footer {
+.footer-card {
   width: 100%;
+  line-height: 1.8em;
   background-color: #efefef; }
+  .footer-card strong {
+    color: #0277bd; }
 
 blockquote {
   margin: 15px 0;
@@ -220,6 +227,31 @@ blockquote {
       border-radius: 50%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%; }
+
+.city-card {
+  height: 200px;
+  overflow: visible;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 5%;
+  transition: all 0.3s ease; }
+
+.instruction-num {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: -10%;
+  left: -3%;
+  width: 1em;
+  height: 1em;
+  font-size: 48px;
+  text-align: center;
+  line-height: 1em;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%; }
 
 /*---Pagination---*/
 /*--- pagination --- */
@@ -765,6 +797,92 @@ blockquote {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft; }
 
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `cmn-toggle-switch` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+
+.cmn-toggle-switch:focus {
+  outline: none; }
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  right: 10px;
+  height: 6px;
+  background: white; }
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  content: ""; }
+
+.cmn-toggle-switch span::before {
+  top: -12px; }
+
+.cmn-toggle-switch span::after {
+  bottom: -12px; }
+
+.cmn-toggle-switch__htla {
+  background-color: #32dc64; }
+
+.cmn-toggle-switch__htla span {
+  transition: transform 0.3s; }
+
+.cmn-toggle-switch__htla span::before {
+  transform-origin: top right;
+  transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.cmn-toggle-switch__htla span::after {
+  transform-origin: bottom right;
+  transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+.cmn-toggle-switch__htla.active {
+  background-color: #18903c; }
+
+.cmn-toggle-switch__htla.active span {
+  transform: rotate(180deg); }
+
+.cmn-toggle-switch__htla.active span::before,
+.cmn-toggle-switch__htla.active span::after {
+  width: 50%; }
+
+.cmn-toggle-switch__htla.active span::before {
+  top: 0;
+  transform: translateX(21px) translateY(3px) rotate(45deg); }
+
+.cmn-toggle-switch__htla.active span::after {
+  bottom: 0;
+  transform: translateX(21px) translateY(-3px) rotate(-45deg); }
+
 .skin {
   color: #353535;
   background-color: #fff;
@@ -822,6 +940,9 @@ blockquote {
 
 /*---styled---*/
 /*紀錄常用樣式*/
+.text-left {
+  text-align: left; }
+
 .heading-deco {
   padding: 5px 10px;
   border-radius: 15px;
@@ -835,6 +956,9 @@ blockquote {
   transition: border-bottom 0.3s ease; }
   .bottom-deco:hover {
     border-bottom: 5px solid #015380; }
+
+.bold {
+  font-weight: bold; }
 
 .quote-card-img:hover, .l-menu .user-info-img img:hover {
   -webkit-transform: scale(1.1);

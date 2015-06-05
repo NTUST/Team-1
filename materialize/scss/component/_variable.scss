@@ -1,17 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
-/*--- color ---*/
+// colors
 $font-color           : #444;
 $emphasis-color       : #222;
 $emphasis-color2      : #080A9F;
 $link-color           : #0288d1;
-$hover-color          : #015380;
+$hover-color          : #0768F2;
 $menu-color           : #726464;
 $br-color             : #ddd;
 $baseline             : #0277bd;
 $header-color         : #03a9f4;
 $main-color           : #03a9f4;
 
-/*---typography---*/
+// Typography
 $line-height          : 1.9em;
 $global-font-size     : 16px;
 $l-menu-width         : 220px;
@@ -43,9 +43,9 @@ $header-height        : 55px;
 }
 
 .bg-color{
-	background-color: $link-color;
+	background-color: $link-color!important;
 	&:hover{
-		background-color: $hover-color;
+		background-color: $hover-color!important;
 	}
 }
 

@@ -1,4 +1,4 @@
-@import "variable";
+
 
 %header-setting{
 	color:$header-color;
@@ -11,7 +11,7 @@
 	position:relative;
 	padding:15px;
 	margin-bottom: 10px;
-	@include border-radius(2px);
+	@include border-radius(6px);
 	height:325px;
 	background-color:#f0f0f0;
 }

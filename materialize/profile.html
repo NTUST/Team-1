@@ -41,28 +41,35 @@
         <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
         <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 45px; right: 24px;">
             <a class="btn-floating btn-large red">
-              <i class="large mdi-editor-mode-edit"></i>
+                <i class="large mdi-editor-mode-edit"></i>
             </a>
             <ul>
-              <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
-              <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
-              <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
-              <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+                <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
+                <li><a class=
+                "btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+                <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+                <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
             </ul>
         </div>
         <header class="kai-header">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><i class="mdi-social-domain"></i></a>
-                    <ul class="right">
-                        <li><button id="open-menu" class="btn btn-large show-on-small">open</button></li>
-                        <li><a href="author.html">關於城市人</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">JavaScript</a></li>
+                    <a href="index.html" class="brand-logo center logo-box"><span><i class="fa fa-building fa-2x"></i> CityWork</span></a>
+                    <ul class="right hide-on-small-only">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於城市人</a></li>
+                        <li><a href="#">加入我們</a></li>
                         <li><input type="checkbox" class="openmenu"></li>
                     </ul>
+                    <ul class="left">
+                        <li>
+                            <a href="#" id="open-menu" class="btn bg-color cmn-toggle-switch cmn-toggle-switch__htla active hide-on-large-only">
+                                <span>toggle menu</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
                 </div>
-
             </nav>
         </header>
         <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
@@ -71,7 +78,7 @@
                     <a href=""><img src="profile.jpg" alt=""></a>
                 </div>
                 <ul class="media-link">
-                    <li><a href="#" ><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
                     <li><a href="#" title="收藏文章"><i class="fa fa-heart fa-lg"></i></a></li>
                 </ul>
@@ -81,9 +88,12 @@
                 <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
                 <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
                 <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
-                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
                 <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
-                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+                <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+            <ul class="l-menu-content">
+                <li><a href="author.html"><i class="fa fa-users"></i> 關於城市人</a></li>
+                <li><a href="profile.html"><i class="fa fa-cog"></i> 個人檔案</a></li>
             </ul>
         </div>
         <div class="main-container">
@@ -91,8 +101,8 @@
                 <div class="row">
                     <div class="col s12 m12 l12 center">
                         <div class="heading"><span class="title"><i class="fa fa-building"></i> 城市人檔案</span></div>
-                        <div class="profile-container col s10 m10 l10 offset-l1">
-                            <table class="responsive-table striped">
+                        <div class="profile-container col s12 m10 l10 offset-l1">
+                            <table class="striped">
                                 <thead>
                                   
                                 </thead>
@@ -151,11 +161,38 @@
             </div>
             <div id="modal-profile" class="modal modal-fixed-footer animated fadeInUpBig">
                 <h4>編輯個人介紹</h4>
-                <textarea name="dairy" id="dairy"></textarea>
+                <div class="row">
+                  <form class="col s12 m12 l12">
+                    <div class="row">
+                      <div class="input-field col s12 m12 l12">
+                        <i class="mdi-editor-mode-edit prefix"></i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">編輯個人資料</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
             </div>
             <div id="modal-dairy" class="modal modal-fixed-footer animated fadeInUpBig">
                 <h4>撰寫日誌</h4>
-                <textarea name="dairy" id="dairy"></textarea>
+                <div class="row">
+                  <form class="col s12 m12 l12">
+                    <div class="row">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <i class="mdi-editor-mode-edit prefix prefix"></i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">文章名稱</label>
+                        </div>
+                      </div>
+                      <div class="input-field col s12 m12 l12">
+                        <i class="mdi-editor-mode-edit prefix"></i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">撰寫日誌</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
             </div>
         </div>
             

@@ -67,20 +67,21 @@
         <header class="kai-header">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><i class="mdi-social-domain"></i></a>
-                    <ul class="right">
-                        <li><a href="author.html">關於城市人</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">JavaScript</a></li>
+                    <a href="index.html" class="brand-logo center logo-box"><span><i class="fa fa-building fa-2x"></i> CityWork</span></a>
+                    <ul class="right hide-on-small-only">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於城市人</a></li>
+                        <li><a href="#">加入我們</a></li>
+                        <li><input type="checkbox" class="openmenu"></li>
+                    </ul>
+                    <ul class="left">
                         <li>
-                            <a href="#" id="open-menu" class="btn cmn-toggle-switch cmn-toggle-switch__htla active">
+                            <a href="#" id="open-menu" class="btn bg-color cmn-toggle-switch cmn-toggle-switch__htla active hide-on-large-only">
                                 <span>toggle menu</span>
                             </a>
                         </li>
-                        <li>
-                            <input type="checkbox" class="openmenu">
-                        </li>
                     </ul>
+                    
                 </div>
             </nav>
         </header>
@@ -100,9 +101,12 @@
                 <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
                 <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
                 <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
-                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
                 <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
-                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+                <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+            <ul class="l-menu-content">
+                <li><a href="author.html"><i class="fa fa-users"></i> 關於城市人</a></li>
+                <li><a href="profile.html"><i class="fa fa-cog"></i> 個人檔案</a></li>
             </ul>
         </div>
         
@@ -113,7 +117,7 @@
                         <div class="col s12 m6 l4">
                             <div class="city-card card">
                                 <span class="instruction-num"><span>1</span></span>
-                                <div class="k-card-title center"><h5>優雅的轉身，發現新亮點</h5></div>
+                                <div class="k-card-title center"><h5>發現新亮點</h5></div>
                                 <hr>
                                 <div class="k-card-content">
                                     <p>在繁忙的城市裡穿梭，步調緊湊的時光中，尋找棲身之處。</p>
@@ -189,7 +193,7 @@
                     <div class="heading"><span class="title">下一個城市人，由你決定</span></div>
                     <form class="col s12">
                       <div class="row">
-                          <div class="input-field col s6">
+                          <div class="input-field col s12 m6 l3">
                             <i class="mdi-av-my-library-books prefix"></i>
                             <input id="icon_prefix1" type="text" length="10">
                             <label for="icon_prefix1">城市人</label>
@@ -211,7 +215,9 @@
                     </div>
                 </div>    
                 <div class="row">
-                    <div class="heading"><span class="title">其他人怎麼說</span></div>
+                    <div class="col s12 m12 l12">
+                        <div class="heading"><span class="title">其他人怎麼說</span></div>
+                    </div>
                     <div class="col s12 m12 l12">
                         <ul class="collection">
                             <li class="collection-item avatar">

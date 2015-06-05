@@ -20,6 +20,7 @@
                 selectMonths: true, // Creates a dropdown to control month
                 selectYears: 100 // Creates a dropdown of 15 years to control year
               });
+
         });
     </script>
     <script>
@@ -77,20 +78,21 @@
         <header class="kai-header">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><i class="mdi-social-domain"></i></a>
-                    <ul class="right">
-                        <li><a href="author.html">關於城市人</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">JavaScript</a></li>
+                    <a href="index.html" class="brand-logo center logo-box"><span><i class="fa fa-building fa-2x"></i> CityWork</span></a>
+                    <ul class="right hide-on-small-only">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於城市人</a></li>
+                        <li><a href="#">加入我們</a></li>
+                        <li><input type="checkbox" class="openmenu"></li>
+                    </ul>
+                    <ul class="left">
                         <li>
-                            <a href="#" id="open-menu" class="btn cmn-toggle-switch cmn-toggle-switch__htla active">
+                            <a href="#" id="open-menu" class="btn bg-color cmn-toggle-switch cmn-toggle-switch__htla active hide-on-large-only">
                                 <span>toggle menu</span>
                             </a>
                         </li>
-                        <li>
-                            <input type="checkbox" class="openmenu">
-                        </li>
                     </ul>
+                    
                 </div>
             </nav>
         </header>
@@ -110,9 +112,12 @@
                 <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
                 <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
                 <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
-                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
                 <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
                 <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+            <ul class="l-menu-content">
+                <li><a href="author.html"><i class="fa fa-users"></i> 關於城市人</a></li>
+                <li><a href="profile.html"><i class="fa fa-cog"></i> 個人檔案</a></li>
             </ul>
         </div>
         
@@ -127,19 +132,24 @@
                             <div class="slider">
                                 <ul class="list">
                                     <li>
+                                        <h5>一起出發</h5>
                                         <a target="_blank" href="#"><img src="IMAG0137.jpg">
                                         </a>
                                     </li>
                                     <li>
+                                        <h5>一起出發</h5>
                                         <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
                                     </li>
                                     <li>
+                                        <h5>一起出發</h5>
                                         <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
                                     </li>
                                     <li>
+                                        <h5>一起出發</h5>
                                         <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
                                     </li>
                                     <li>
+                                        <h5>一起出發</h5>
                                         <a target="_blank" href="#"><img src="IMAG0137.jpg"></a>
                                     </li>
                                 </ul>
@@ -248,12 +258,12 @@
                         <div class="col s12 m12 l4">
                             <div class="footer-card">
                                 <span class="sub-title">加入我們</span>
-                                <p class="text-left">我們正在尋找熱愛城市的你們。不管你是<strong>設計師</strong>、<strong>工程師</strong>還是<strong>部落客</strong>，城市人都渴望遇見想要改變現狀的你！但是在此之前，我們有個<strong><a href="">小功課</a></strong>來當作城市人的評分標準。</p>
+                                <p class="text-left">我們正在尋找熱愛城市的你們。不管你是<strong>設計師</strong>、<strong>工程師</strong>還是<strong>部落客</strong>，城市人都渴望遇見想要改變現狀的你！但是在此之前，我們有個<strong><a href="homework.html">小功課</a></strong>來當作城市人的評分標準。</p>
                                 <p class="text-left">
                                     我們期待你的加入，一起讓城市人變得更加茁壯。
                                 </p>
                                 
-                                <a target="modal1" class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+                                <a target="modal1" class="modal-trigger waves-effect waves-light btn" href="#modal1">填寫表單</a>
 
   
                                 <div id="modal1" class="modal modal-fixed-footer">
@@ -276,16 +286,18 @@
                                             </form>
                                             <div class="input-field col s12 m6 l6">
                                                 
-                                                <select class="browser-default">
-                                                  <label>Browser Select</label>
+                                                <select>
+                                                  
                                                   <option value="" disabled selected>請選擇報名職位......</option>
                                                   <option value="1">UI設計師</option>
                                                   <option value="2">程式設計師</option>
                                                   <option value="3">作者群</option>
                                                   <option value="4">其他</option>
+
                                                 </select>
                                                 
                                             </div>
+                        
                                             <div class="col s12 m12 l6">
                                                 <form action="#">
                                                     <div class="file-field input-field">
@@ -297,10 +309,7 @@
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="col s12 m12 l6">
-                                                <label for="date">生日</label>
-                                                <input type="date" class="datepicker">
-                                            </div>
+                                            
                                             
                                         </div>
                                     </div>

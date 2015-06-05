@@ -32,19 +32,40 @@
 <body>
 <div class="fullpage">
      <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
-    <header class="kai-header clearfix">
-        <nav>
-            <div class="nav clearfix">
-                <a href="index.html" class="logo-box"><i class="fa fa-building"></i>CityWork</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="author.html">關於城市人</a></li>
-                    <li><a class="" href="index.html">回首頁</a></li>
-                    <li ><a class="" href="articlelist.html">最新文章</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
+        <div class="fixed-action-btn hide-on-med-and-up" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="large mdi-editor-mode-edit"></i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red "><i class="large mdi-editor-insert-chart"></i></a></li>
+                <li><a class=
+                "btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+                <li><a id="show-menu" class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+                <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+            </ul>
+        </div>
+        <header class="kai-header">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo center logo-box"><span><i class="fa fa-building fa-2x"></i> CityWork</span></a>
+                    <ul class="right hide-on-small-only">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於城市人</a></li>
+                        <li><a href="#">加入我們</a></li>
+                        <li><input type="checkbox" class="openmenu"></li>
+                    </ul>
+                    <ul class="left">
+                        <li>
+                            <a href="#" id="open-menu" class="btn bg-color cmn-toggle-switch cmn-toggle-switch__htla active hide-on-large-only">
+                                <span>toggle menu</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </header>
+        <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
             <div id="1" class="user-info">
                 <div class="user-info-img">
                     <a href=""><img src="profile.jpg" alt=""></a>
@@ -60,9 +81,12 @@
                 <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
                 <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
                 <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
-                <li><a href="#"><i class="fa fa-group "></i> 職場</a></li>
                 <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
-                <li><a href="#"><i class="fa fa-building "></i> 城市人</a></li>
+                <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+            <ul class="l-menu-content">
+                <li><a href="author.html"><i class="fa fa-users"></i> 關於城市人</a></li>
+                <li><a href="profile.html"><i class="fa fa-cog"></i> 個人檔案</a></li>
             </ul>
         </div>
 

@@ -1,10 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
-/*--- color ---*/
-/*---typography---*/
 .bg-color {
-  background-color: #0288d1; }
+  background-color: #0288d1 !important; }
   .bg-color:hover {
-    background-color: #015380; }
+    background-color: #0768F2 !important; }
 
 .tag {
   position: relative;

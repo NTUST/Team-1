@@ -14,6 +14,7 @@
 %article {
 	font-size:16px;
 	color:$font-color;
+	
 
 }
 
@@ -21,11 +22,19 @@
 
 .article{
 	@extend %article ;
+	@media screen and (max-width: 663px) {
+		font-size:14px;
+	}
 	&-heading{
 		margin: 0 15px;
 		padding: 10px 35px;
 		border-bottom: 2px solid $br-color;
+		font-weight: normal;
 		@media all and (max-width: 663px) {
+			h3{
+				font-size:2em;
+
+			}
 			padding:5px;
 			margin:5px;
 		}
@@ -42,7 +51,10 @@
 		background-color:transparent;
 		color:$emphasis-color;
 		p{
-			line-height: 40px;
+			line-height: 3em;
+			@media screen and (max-width: 663px) {
+				line-height: 2em;
+			}
 		}
 		&::before,
 		&::after{
@@ -98,6 +110,7 @@
 			border-left:4px solid #6cf;
 			@media screen and (max-width: 687px) {
 				margin:0;
+				margin-bottom: 10px;
 			}
 		}
 	}

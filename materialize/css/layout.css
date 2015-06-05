@@ -628,14 +628,20 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
   color: #444; }
 
 /*---ArticleContent---*/
+@media screen and (max-width: 663px) {
+  .article {
+    font-size: 14px; } }
 .article-heading {
   margin: 0 15px;
   padding: 10px 35px;
-  border-bottom: 2px solid #ddd; }
+  border-bottom: 2px solid #ddd;
+  font-weight: normal; }
   @media all and (max-width: 663px) {
     .article-heading {
       padding: 5px;
-      margin: 5px; } }
+      margin: 5px; }
+      .article-heading h3 {
+        font-size: 2em; } }
 .article-intro {
   position: relative;
   margin: 15px 20px;
@@ -647,7 +653,10 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
       padding: 5px;
       margin: 5px; } }
   .article-intro p {
-    line-height: 40px; }
+    line-height: 3em; }
+    @media screen and (max-width: 663px) {
+      .article-intro p {
+        line-height: 2em; } }
   .article-intro::before, .article-intro::after {
     content: "";
     display: inline-block;
@@ -687,7 +696,8 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
   border-left: 4px solid #6cf; }
   @media screen and (max-width: 687px) {
     .article-content blockquote {
-      margin: 0; } }
+      margin: 0;
+      margin-bottom: 10px; } }
 
 h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .article-card h4, .article-card h5, .article-card h6 {
   color: #03a9f4;

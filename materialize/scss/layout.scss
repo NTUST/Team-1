@@ -197,7 +197,12 @@
 	
 }
 
-
+.auto-height{
+	height:84px;
+	@media screen and (max-width: 663px) {
+		height:auto!important;
+	}
+}
 
 
 

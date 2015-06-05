@@ -1198,6 +1198,12 @@ blockquote {
     font-weight: bold;
     border-right: 1px solid #ddd; }
 
+.auto-height {
+  height: 84px; }
+  @media screen and (max-width: 663px) {
+    .auto-height {
+      height: auto !important; } }
+
 /****************
 	Slider
 *****************/

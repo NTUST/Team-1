@@ -123,15 +123,27 @@
 	font-size:14px;
 	&-img{
 		float:left;
+		@media screen and (max-width:663px) {
+			display: block;
+			float: none;
+			width: 90%;
+			text-align: center;
+		}
 		margin-right:15px;
 		width:20%;
 		img{
-			max-width: 100%;
+			text-align: center;
+			max-width: 90%;
 			@include border-radius(50%);
 		}
 	}
 	&-intro{
 		float: left;
+		@media screen and (max-width:663px) {
+			display: block;
+			float: none;
+			width:100%;
+		}
 		width:75%;
 		line-height: 1.8em;
 	}

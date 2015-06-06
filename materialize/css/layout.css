@@ -709,8 +709,15 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
     float: left;
     margin-right: 15px;
     width: 20%; }
+    @media screen and (max-width: 663px) {
+      .author-box-img {
+        display: block;
+        float: none;
+        width: 90%;
+        text-align: center; } }
     .author-box-img img {
-      max-width: 100%;
+      text-align: center;
+      max-width: 90%;
       border-radius: 50%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%; }
@@ -718,6 +725,11 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
     float: left;
     width: 75%;
     line-height: 1.8em; }
+    @media screen and (max-width: 663px) {
+      .author-box-intro {
+        display: block;
+        float: none;
+        width: 100%; } }
 
 h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .article-card h4, .article-card h5, .article-card h6 {
   color: #03a9f4;

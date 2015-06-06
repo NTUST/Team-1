@@ -64,8 +64,29 @@
 
 /*---styled---*/  /*紀錄常用樣式*/
 
+.list-item-inline{
+	li{
+		display: inline-block;
+		margin:0.4em;
+	}
+	
+}
+.list-item-dot{
+	li{
+		list-style: disc;
+	}
+	
+}
+
+.list-item-squre{
+	list-style: square;
+}
+
 .text-left{
 	text-align: left;
+}
+.text-right{
+	text-align: right;
 }
 .heading-deco{
 	padding:5px 10px;

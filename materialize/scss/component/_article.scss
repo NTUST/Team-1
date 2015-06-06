@@ -23,7 +23,7 @@
 .article{
 	@extend %article ;
 	@media screen and (max-width: 663px) {
-		font-size:14px;
+		font-size:14.5px;
 	}
 	&-heading{
 		margin: 0 15px;
@@ -114,6 +114,29 @@
 			}
 		}
 	}
+}
+
+.author-box{
+	padding:15px;
+	border-top:2px solid $br-color;
+	border-bottom:2px solid $br-color;
+	font-size:14px;
+	&-img{
+		float:left;
+		margin-right:15px;
+		width:20%;
+		img{
+			max-width: 100%;
+			@include border-radius(50%);
+		}
+	}
+	&-intro{
+		float: left;
+		width:75%;
+		line-height: 1.8em;
+	}
+
+	
 }
 
 

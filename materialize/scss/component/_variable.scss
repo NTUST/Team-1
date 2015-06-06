@@ -6,10 +6,12 @@ $emphasis-color2      : #080A9F;
 $link-color           : #0288d1;
 $hover-color          : #0768F2;
 $menu-color           : #726464;
-$br-color             : #ddd;
+$br-color             : #ccc;
 $baseline             : #0277bd;
 $header-color         : #03a9f4;
 $main-color           : #03a9f4;
+$card-color           :#efefef;
+$card-blue            :cornflowerblue;
 
 // Typography
 $line-height          : 1.9em;
@@ -39,7 +41,7 @@ $header-height        : 55px;
 }
 
 %hover{
-	background-color:$hover-color;
+	background-color:#ddd;
 }
 
 .bg-color{

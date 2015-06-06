@@ -5,8 +5,7 @@
 @import "component/cards";
 @import "component/image";
 @import "component/event-box";
-
-
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 /***********************
 	  BodySetting
  **********************/
@@ -39,6 +38,7 @@
 }
 
 .logo-box{
+	font-family: 'Pacifico', cursive;
 	i{
 		display: inline!important;
 	}
@@ -155,6 +155,9 @@
 	}
 .content-container{
 	color:$font-color;
+	i{
+		color:$card-blue;
+	}
 	.heading{
 		margin: 15px 0;
 		text-align: center;
@@ -180,21 +183,51 @@
 		font-size:1.2em;
 		border-bottom: 2px solid $main-color;
 	}
-
+/****************
+	FutherBox
+*****************/
+.futher-box{
+	font-size:16px;
+	a{
+		display: block;
+		color:$font-color;
+		transition:0.3s all ease;
+		&:hover{
+			@extend %hover;
+		}
+	}
+	
+	li{
+		hr{
+			height:3px;
+			width:100%;
+			float:left;
+			border:none;
+			background-color: $main-color;
+		}
+		margin-bottom: 1.5em;
+	}
+}
 /****************
 	Table
 *****************/
 .profile-container{
 	td{
+		line-height: 1.8em;
 		&:first-child{
 			width:20%;
+			@media screen and (max-width:663px) {
+				width:40%;
+			}
 			font-weight: bold;
 			border-right:1px solid $br-color;
 		}
 		padding:15px 10px;
 		
 	}
-	
+	a{
+		display: block;
+	}
 }
 
 .auto-height{

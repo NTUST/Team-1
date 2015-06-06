@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
-.l-menu-content li:hover {
-  background-color: #0768F2; }
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+.l-menu-content li:hover, .futher-box a:hover {
+  background-color: #ddd; }
 
 .bg-color {
   background-color: #0288d1 !important; }
@@ -630,11 +631,11 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
 /*---ArticleContent---*/
 @media screen and (max-width: 663px) {
   .article {
-    font-size: 14px; } }
+    font-size: 14.5px; } }
 .article-heading {
   margin: 0 15px;
   padding: 10px 35px;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #ccc;
   font-weight: normal; }
   @media all and (max-width: 663px) {
     .article-heading {
@@ -699,12 +700,31 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
       margin: 0;
       margin-bottom: 10px; } }
 
+.author-box {
+  padding: 15px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  font-size: 14px; }
+  .author-box-img {
+    float: left;
+    margin-right: 15px;
+    width: 20%; }
+    .author-box-img img {
+      max-width: 100%;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%; }
+  .author-box-intro {
+    float: left;
+    width: 75%;
+    line-height: 1.8em; }
+
 h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .article-card h4, .article-card h5, .article-card h6 {
   color: #03a9f4;
-  font-weight: bold; }
+  font-weight: normal; }
 
 .article-card {
-  border: 1px solid #ddd; }
+  border: 1px solid #ccc; }
 
 .k-card, .quote-card, .footer-card, .article-card, .author-card, .city-card {
   position: relative;
@@ -714,7 +734,7 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   height: 325px;
-  background-color: #f0f0f0; }
+  background-color: #efefef; }
 
 .quote-card-img:hover, .l-menu .user-info-img img:hover {
   -webkit-transform: scale(1.1);
@@ -727,10 +747,16 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
   position: relative;
   font-size: 12px;
   overflow: hidden; }
+  @media screen and (max-width: 663px) {
+    .k-card {
+      font-size: 14.5px; } }
   .k-card-img {
     width: 100%;
     height: 35%;
     text-align: center; }
+    @media screen and (max-width: 663px) {
+      .k-card-img {
+        height: 45%; } }
     .k-card-img img {
       max-width: 100%;
       height: 100%; }
@@ -1028,8 +1054,21 @@ blockquote {
 
 /*---styled---*/
 /*紀錄常用樣式*/
+.list-item-inline li {
+  display: inline-block;
+  margin: 0.4em; }
+
+.list-item-dot li {
+  list-style: disc; }
+
+.list-item-squre {
+  list-style: square; }
+
 .text-left {
   text-align: left; }
+
+.text-right {
+  text-align: right; }
 
 .heading-deco {
   padding: 5px 10px;
@@ -1088,8 +1127,10 @@ blockquote {
   background-image: -o-linear-gradient(top, #03a9f4 0%, 50% 100%);
   background-image: linear-gradient(top, #03a9f4 0%, 50% 100%); }
 
-.logo-box i {
-  display: inline !important; }
+.logo-box {
+  font-family: 'Pacifico', cursive; }
+  .logo-box i {
+    display: inline !important; }
 
 /******************
 	LeftMenu
@@ -1110,7 +1151,7 @@ blockquote {
   .l-menu .user-info-img {
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #ccc; }
     .l-menu .user-info-img img {
       max-width: 50%;
       border-radius: 50%;
@@ -1160,7 +1201,7 @@ blockquote {
 .heading {
   margin: 15px 0;
   text-align: center;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ccc; }
 
 .title, .sub-title, .content-container .sub-title, .secondary-container .sub-title, .footer-container .sub-title {
   font-size: 1.5em;
@@ -1171,10 +1212,12 @@ blockquote {
 
 .content-container, .secondary-container, .footer-container {
   color: #444; }
+  .content-container i, .secondary-container i, .footer-container i {
+    color: cornflowerblue; }
   .content-container .heading, .secondary-container .heading, .footer-container .heading {
     margin: 15px 0;
     text-align: center;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #ccc; }
   .content-container .title, .secondary-container .title, .footer-container .title, .content-container .sub-title, .secondary-container .sub-title, .footer-container .sub-title {
     font-size: 1.5em;
     border-bottom: 4px solid #03a9f4; }
@@ -1189,14 +1232,38 @@ blockquote {
   border-bottom: 2px solid #03a9f4; }
 
 /****************
+	FutherBox
+*****************/
+.futher-box {
+  font-size: 16px; }
+  .futher-box a {
+    display: block;
+    color: #444;
+    transition: 0.3s all ease; }
+  .futher-box li {
+    margin-bottom: 1.5em; }
+    .futher-box li hr {
+      height: 3px;
+      width: 100%;
+      float: left;
+      border: none;
+      background-color: #03a9f4; }
+
+/****************
 	Table
 *****************/
 .profile-container td {
+  line-height: 1.8em;
   padding: 15px 10px; }
   .profile-container td:first-child {
     width: 20%;
     font-weight: bold;
-    border-right: 1px solid #ddd; }
+    border-right: 1px solid #ccc; }
+    @media screen and (max-width: 663px) {
+      .profile-container td:first-child {
+        width: 40%; } }
+.profile-container a {
+  display: block; }
 
 .auto-height {
   height: 84px; }

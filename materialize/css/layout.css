@@ -1327,6 +1327,9 @@ blockquote {
 .modal-width {
   width: 70%;
   max-height: 90%; }
+  @media screen and (max-width: 663px) {
+    .modal-width {
+      width: 90%; } }
 
 /****************
 	Slider

@@ -259,6 +259,9 @@
 .modal-width{
 	width:70%;
 	max-height:90%;
+	@media screen and (max-width: 663px) {
+		width:90%;
+	}
 }
 
 

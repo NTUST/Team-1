@@ -13,6 +13,19 @@ $main-color           : #03a9f4;
 $card-color           :#efefef;
 $card-blue            :cornflowerblue;
 
+
+/*---these colors are used to specil area---*/
+$color1: #8ee3f5;
+$color2: #70cad1;
+$color3: #6b6bea;
+$color4: #3e517a;
+$color5: #b08ea2;
+
+$color-white:#ddd;
+
+.color-white{
+	color:$color-white;
+}
 // Typography
 $line-height          : 1.9em;
 $global-font-size     : 16px;

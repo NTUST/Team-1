@@ -5,9 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Design</title>
+    <link rel="Shortcut Icon" href="img/citywork.ico">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+    $(function() {
+        $("#gotop").click(function() {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $("#gotop").fadeIn("fast");
+            } else {
+                $("#gotop").stop().fadeOut("fast");
+            }
+        });
+    });
+    </script>
 </head>
 
 <body>
@@ -60,9 +80,7 @@
             <ul class="l-menu-content">
                 <li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
                 <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> 人物</a></li>
-                <li><a href="#"><i class="fa fa-pencil"></i> 提案</a></li>
-                <li><a href="#"><i class="fa fa-code "></i> 程式人</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> 城市人聊聊</a></li>
                 <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
             </ul>
             <ul class="l-menu-content">
@@ -101,7 +119,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【成熟男子指南書】</h5></div>
                             <div class="article-card-content">男孩們長大變成男人，多了一些世故之外更需要成熟的氣質與風度</div>
                             <div class="article-card-author"></div>
@@ -109,7 +127,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -120,7 +138,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -131,7 +149,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -142,7 +160,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -153,7 +171,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -164,7 +182,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -175,7 +193,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -186,7 +204,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span></div>
                             <div class="article-card-author"><span>愷開</span>
@@ -197,7 +215,7 @@
                     </div>
                     <div class="col s12 m6 l4">
                         <div class="article-card card-panel">
-                            <div class="article-card-img"><img src="profile.jpg" alt=""></div>
+                            <div class="article-card-img"><img src="master_01.png" alt=""></div>
                             <div class="article-card-title"><h5>【職場生存學】</h5></div>
                             <div class="article-card-content"><span>我們都在夾縫中求生存，至少還有最完美的避風港，不知道你是否願意出發</span>
                             </div>

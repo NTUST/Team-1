@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,300);
+/*---these colors are used to specil area---*/
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
+.color-white {
+  color: #ddd; }
+
 .l-menu-content li:hover, .futher-box a:hover {
   background-color: #ddd; }
 
@@ -745,8 +749,11 @@ h1, h2, h3, h4, h5, h6, .article-card h1, .article-card h2, .article-card h3, .a
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  height: 325px;
+  height: 350px;
   background-color: #efefef; }
+  @media screen and (max-width: 663px) {
+    .k-card, .quote-card, .footer-card, .article-card, .author-card, .city-card {
+      height: 300px; } }
 
 .quote-card-img:hover, .l-menu .user-info-img img:hover {
   -webkit-transform: scale(1.1);
@@ -860,7 +867,7 @@ blockquote {
   background-color: #efefef;
   border-left: 4px solid #6cf; }
 
-/*---ArticleCard---*/
+/*---$ArticleCard---*/
 .article-card {
   height: 300px;
   font-size: 12px;
@@ -878,6 +885,9 @@ blockquote {
     font-size: 1.5em; }
   .article-card h5 {
     font-size: 1.5em; }
+  @media screen and (max-width: 663px) {
+    .article-card {
+      font-size: 14px; } }
   .article-card:hover {
     box-shadow: 1px 0 0 0.5px #0768F2, 0 1px 0 0.5px #0768F2, 0 0 1px 0.5px #0768F2, 0 0 0 0.5px #0768F2; }
   .article-card-img {
@@ -925,7 +935,23 @@ blockquote {
     .article-card .favorite i {
       font-size: 1em; }
 
-/*---AuthorCard---*/
+/*---$h-Card---*/
+.color1 {
+  background-color: #8ee3f5; }
+
+.color2 {
+  background-color: #70cad1; }
+
+.color3 {
+  background-color: #6b6bea; }
+
+.color4 {
+  background-color: #3e517a; }
+
+.color5 {
+  background-color: #b08ea2; }
+
+/*---$AuthorCard---*/
 .author-card {
   height: auto;
   color: #444; }
@@ -967,8 +993,8 @@ blockquote {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%; }
 
-/*---Pagination---*/
-/*--- pagination --- */
+/*---$Pagination---*/
+/*---$ pagination --- */
 .pagination {
   display: block;
   margin: 80px auto;
@@ -1283,17 +1309,36 @@ blockquote {
     .auto-height {
       height: auto !important; } }
 
+.talk-table td, .talk-table th {
+  padding: 5px;
+  font-weight: normal; }
+.talk-table th:first-child {
+  width: 10%; }
+  @media screen and (max-width: 663px) {
+    .talk-table th:first-child {
+      width: 30%; } }
+.talk-table img {
+  max-width: 100%;
+  height: 30%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%; }
+
+.modal-width {
+  width: 70%;
+  max-height: 90%; }
+
 /****************
 	Slider
 *****************/
 .slider {
   width: 100%;
-  height: 300px;
+  height: 400px;
   position: relative;
   overflow: hidden; }
   @media screen and (max-width: 600px) {
     .slider {
-      height: 200px; } }
+      height: 300px; } }
   .slider .list {
     padding: 0;
     margin: 0;

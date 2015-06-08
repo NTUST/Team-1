@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市人聊聊|城市人</title>
+    <link rel="Shortcut Icon" href="img/citywork.ico">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/fadein.js"></script>
+    <script>
+        $(function(){
+            $("#gotop").click(function(){
+                jQuery("html,body").animate({scrollTop:0}, 1000);
+            });
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 300){
+                    $("#gotop").fadeIn("fast");
+                }
+                else{
+                    $("#gotop").stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fullpage">
+        <a id="gotop" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-arrow-up"></i></a>
+        <header class="kai-header">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo center logo-box"><span><i class="fa fa-building fa-2x"></i> CityWork</span></a>
+                    <ul class="right hide-on-small-only">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="author.html">關於城市人</a></li>
+                        <li><a href="homework.html">加入我們</a></li>
+                        <li><input type="checkbox" class="openmenu"></li>
+                    </ul>
+                    <ul class="left">
+                        <li>
+                            <a href="#" id="open-menu" class="btn bg-color cmn-toggle-switch cmn-toggle-switch__htla active hide-on-large-only">
+                                <span>toggle menu</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </header>
+        <div class="l-menu hide-on-small-only z-depth-2 animated fadeInLeft">
+            <div id="1" class="user-info">
+                <div class="user-info-img">
+                    <a href=""><img src="profile.jpg" alt=""></a>
+                </div>
+                <ul class="media-link">
+                    <li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" title="收藏文章"><i class="fa fa-heart fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <ul class="l-menu-content">
+                <li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
+                <li><a href="articlelist.html"><i class="fa fa-newspaper-o"></i> 最新文章</a></li>
+                <li><a href="talk.html"><i class="fa fa-pencil"></i> 城市人聊聊</a></li>
+                <li><a href="citywork.html"><i class="fa fa-building "></i> 城市人</a></li>
+            </ul>
+            <ul class="l-menu-content">
+                <li><a href="author.html"><i class="fa fa-users"></i> 關於城市人</a></li>
+                <li><a href="profile.html"><i class="fa fa-cog"></i> 個人檔案</a></li>
+            </ul>
+        </div>
+
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m9 l9">
+                        <div class="heading"><span class="title">城市人聊聊</span></div>
+                        <table class="striped talk-table">
+                            <thead>
+                                <tr>
+                                  <th>發表人</th>
+                                  <th>文章名稱</th>
+                                  <th>日期</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">我是大帥哥</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">資管系暖男是你</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">1+1等於我和你</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">大學不要當這六種人</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">你是我的小蝴蝶</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">Re:我是你的小阿飛</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="profile.jpg" alt=""></th>
+                                    <th><a href="#2" class="modal-trigger">沈玉琳笑你</a></th>
+                                    <th>三小時前</th>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="futher-box col s12 m3 l3">
+                    <div class="row">
+                        <div class="heading"><span class="title">熱門文章</span></div>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">職場生存學-如何在夾縫中求生</a><hr style="width:99%"></li>
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">最美的風景是人？別笑死人了</a><hr style="width:80%"></li>
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">求解！33道數學謎題，解出來智商有150</a><hr style="width:76%"></li>
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">最美的風景是人？哥</a><hr style="width:35%"></li>
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">最美的風景是人？大帥哥</a><hr style="width:33%"></li>
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">最美的風景是人？我是大帥哥</a><hr style="width:20%"></li>
+                            <li><i class="fa-li fa fa-circle-o"></i><a href="">我是最美的風景是人？帥哥</a><hr style="width:10%"></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="heading"><span class="title">近期活動</span></div>
+                        <div class="k-card">
+                            <div class="k-card-img">
+                                <img src="profile.jpg" alt="">
+                            </div>
+                            <div class="k-card-title">
+                                <h6>愷開創業談，保證值回票價</h6>
+                            </div>
+                            <div class="k-card-content">
+                                <ul class="list-item-dot">
+                                    <li>時間：6/12 晚上18：00</li>
+                                    <li>地點：台灣科技大學貝殼廳</li>
+                                    <li>票價:30萬元</li>
+                                </ul>
+                                <a href="" class="btn">馬上報名</a>
+
+                            </div>
+                        </div>
+                        <div class="k-card">
+                            <div class="k-card-img">
+                                <img src="profile.jpg" alt="">
+                            </div>
+                            <div class="k-card-title">
+                                <h6>愷開創業談，保證值回票價</h6>
+                            </div>
+                            <div class="k-card-content">
+                                <ul class="list-item-dot">
+                                    <li>時間：6/12 晚上18：00</li>
+                                    <li>地點：台灣科技大學貝殼廳</li>
+                                    <li>票價:30萬元</li>
+                                </ul>
+                                <a href="" class="btn">馬上報名</a>
+
+                            </div>
+                        </div>
+                        <div class="k-card">
+                            <div class="k-card-img">
+                                <img src="profile.jpg" alt="">
+                            </div>
+                            <div class="k-card-title">
+                                <h6>愷開創業談，保證值回票價</h6>
+                            </div>
+                            <div class="k-card-content">
+                                <ul class="list-item-dot">
+                                    <li>時間：6/12 晚上18：00</li>
+                                    <li>地點：台灣科技大學貝殼廳</li>
+                                    <li>票價:30萬元</li>
+                                </ul>
+                                <a href="" class="btn">馬上報名</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="heading"><span class="title">熱門廣告搶先看</span></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="2" class="modal modal-width">
+            <div class="modal-content">
+                <h5>大帥哥是你</h5>
+                <div class="article-content">
+                  <p>
+                    安安你好我是大帥哥
+                  </p>
+                  <p>
+                    我與閃光是同系同班同學
+                    原本我們兩人並沒有特別的交集
+                    直到妳開始慢慢靠近我接近我
+                    我們才有些許的熟悉
+                    相處幾個禮拜（小曖昧）之後
+                    覺得妳是個不錯的女孩
+                    個性活潑（非常）可愛可愛（傻傻）的
+                    然後從朋友得知妳是喜歡我的
+                    我考慮了一下決定向你表白
+                    妳最後是答應了。
+                  </p>
+                  <p>
+                      在一起的日子，
+                    每天真的都很幸福
+                    打打鬧鬧，互相陪伴 
+                    晚上有空閒也會小約會一下
+                    身旁有妳真好。
+                  </p>
+                  <p>
+                      直到上禮拜，
+                        妳突然一直跟我說妳的不是（缺點）
+                        乖～我們都要成為更好的人呀
+                        更何況每個人都有缺點的
+                        而妳一直不斷的說妳是壞女人之類的話
+                        我也當然一直安撫妳...
+                  </p>
+                  <p>
+                      講話不理 賴不回也不讀 簡訊不回 電話不接 看到我就想躲 逃開
+                        我緊握妳的雙手而妳死命的要掙脫
+                        怕用痛妳，最後當然是鬆開了
+                        我試過各種各種方法去跟你溝通
+                        但都無效，妳始終不願意理我
+                        詢問妳的好朋友，室友 大家也都不知道妳怎麼了
+                  </p>
+                  <p>
+                      一天兩天這樣過了好幾天...
+                        親愛的，我們好久沒講話了
+                    親愛的，身旁沒有妳的日子很痛苦
+                親愛的，我很害怕妳不要我了
+                        親愛的，我想知道妳怎麼了發生什麼事了
+                        親愛的，回到我身邊好嗎
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

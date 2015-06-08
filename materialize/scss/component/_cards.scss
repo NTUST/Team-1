@@ -12,7 +12,10 @@
 	padding:15px;
 	margin-bottom: 10px;
 	@include border-radius(6px);
-	height:325px;
+	height:350px;
+	@media screen and (max-width:663px) {
+		height:300px;
+	}
 	background-color:$card-color;
 }
 %hover-scale{
@@ -159,7 +162,7 @@ blockquote{
 			border-left:4px solid #6cf; 
 		}
 
-/*---ArticleCard---*/
+/*---$ArticleCard---*/
 .article-card{
 	@for $i from 1 through 6 {
 		h#{$i}{
@@ -173,6 +176,9 @@ blockquote{
 	@extend %card-border;
 	height:300px;
 	font-size:12px;
+	@media screen and (max-width: 663px) {
+		font-size:14px;
+	}
 	overflow: hidden;
 	transition:0.3s all ease;
 	&:hover{
@@ -241,7 +247,25 @@ blockquote{
 
 }
 
-/*---AuthorCard---*/
+/*---$h-Card---*/
+
+.color1{
+	background-color: $color1;
+}
+.color2{
+	background-color: $color2;
+}
+.color3{
+	background-color: $color3;
+}
+.color4{
+	background-color: $color4;
+}
+.color5{
+	background-color: $color5;
+}
+
+/*---$AuthorCard---*/
 .author-card{
 	@extend %k-card;
 	height:auto;
@@ -286,7 +310,7 @@ blockquote{
 }
 
 
-/*---Pagination---*/
+/*---$Pagination---*/
 
 @mixin border-radius($radius) {
 	border-radius: 		$radius;
@@ -294,7 +318,7 @@ blockquote{
   -webkit-border-radius:$radius;
 }
 
-/*--- pagination --- */
+/*---$ pagination --- */
 
 .pagination{
 	display: block;

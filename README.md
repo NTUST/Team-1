@@ -1,6 +1,7 @@
 # Team-1
 
 目前demo : [http://ntust.github.io/Team-1/materialize/index.html](http://ntust.github.io/Team-1/materialize/index.html)
+期末報告：[http://ntust.github.io/Team-1/materialize/CityWork-slider/index.html](http://ntust.github.io/Team-1/materialize/CityWork-slider/index.html)
 
 > 介紹
 

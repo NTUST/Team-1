@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>網頁設計</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/themeset.css">
+
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-video="image/movie.mp4">
+
+					<h2>網頁設計期末報告</h2>
+					<h3>組員</h3>
+					<ul style="text-align:left">
+						<li style="text-align:left" >網頁設計：愷開</li>
+						<li style="text-align:left">技術指導兼CEO:劉晏辰</li>
+						<li>專業打醬油：小白</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>專注於內容</h2>
+					<br>
+					<p class="fragment fade-in visible current-fragment" data-fragment-index="1">原本想做社團網站，但考慮到自身能力不足。</p>
+					
+				</section>
+				
+				<section>
+					<h2>網站孵化過程</h2>
+					<br>
+					<ul>
+						<li>4/6 主題發想、原型架構</li>
+						<li>4/9 更新網頁初版</li>
+						<li>4/10 微調版型</li>
+						<li>4/15 (建立分支)重新設計版型 + 新增文章內容</li>
+						<li>4/18 微調內容</li>
+						<li>4/20 加入about-page頁面(設計尚未完整化)</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<ul>
+							<li>5/10 重新製作版型使用materail design</li>
+							<li>5/20 完成初步設計</li>
+							<li>5/21~30 將功能重新設計後加入<li>
+							<li>6/1~6/3 加入動畫效果</li>
+							<li>6/3~6/8 RWD design及修正bug</li>
+							<li>6/9深夜 網站最後調整</li>
+						</ul>
+						
+					</section>
+
+					<section>
+						<h3>城市人:What we do</h3>
+						<p class="fragment fade-in visible current-fragment" data-fragment-index="1">資訊發達的時代，我們更需要心靈的滋潤</p>
+						<br>
+						<p class="fragment fade-in visible current-fragment" data-fragment-index="2">不用花俏的設計，讓內容更加凸出</p>
+						<br>
+						<p class="fragment fade-in visible current-fragment" data-fragment-index="3">互動機制，加強使用者的歸屬感</p>
+						<br>
+						<p class="fragment fade-in visible current-fragment" data-fragment-index="4">全新日誌系統，紀錄生活中的大小事</p>
+					</section>
+
+					<section>
+						<h3>城市人精選文章</h3>
+						<br>
+						<p style="text-align:left;">不用聳動的標題，不用空泛的內容騙瀏覽率。在這裡的文章都是仔細審稿過後才發表。</p>
+					</section>
+
+					<section>
+						<h3>會員機制：創造互動時刻</h3>
+						<p style="text-align:left;">收藏文章、編輯個人資料、撰寫日誌，心靈充電以外，更讓使用者有沈澱的場所。</p>
+					</section>
+					<section>
+						<h3>城市人聊聊：一起寂寞狂歡</h3>
+						<p>給一群渴望熱鬧的城市人的小小空間</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>DEMO</h2>
+					<br>
+					<a href="http://ntust.github.io/Team-1/materialize/index.html">城市人</a>
+					
+				</section>
+
+				<section>
+					<h2>謝謝大家!</h2>
+					
+				</section>
+
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
